@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"log"
 	"math/rand"
 	"os"
@@ -21,10 +22,18 @@ func init() {
 }
 
 func main() {
+	var n int
+	flag.IntVar(&n, "number", 0, "number of letters in the generated word")
+	flag.IntVar(&n, "n", 0, "number of letters in the generated word")
+	flag.Parse()
+
+	if n == 0 {
+		n = MIN_WORD_LEN + rand.Intn(MAX_WORD_LEN-MIN_WORD_LEN+1)
+	}
+
 	choices := makeChoices()
 	chooser, _ := wr.NewChooser(choices...)
 
-	n := MIN_WORD_LEN + rand.Intn(MAX_WORD_LEN-MIN_WORD_LEN+1)
 	s := make([]rune, n)
 	for i := range s {
 		s[i] = chooser.Pick().(rune)
