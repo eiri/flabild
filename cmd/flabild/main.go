@@ -4,6 +4,7 @@ import (
 	"flag"
 	"log"
 	"os"
+	"path/filepath"
 	"plugin"
 	"strings"
 
@@ -23,7 +24,12 @@ func main() {
 	flag.IntVar(&n, "n", 1, "number of words to generate")
 	flag.Parse()
 
-	p, err := plugin.Open("en.so")
+	this, err := os.Executable()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	p, err := plugin.Open(filepath.Join(filepath.Dir(this), "en.so"))
 	if err != nil {
 		log.Fatal(err)
 	}
