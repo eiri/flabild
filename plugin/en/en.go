@@ -1,12 +1,16 @@
 // THIS MODULE WAS GENERATED, DO NOT EDIT MANUALLY
-package flabild
+package main
 
-import wr "github.com/mroth/weightedrand"
+import (
+	wr "github.com/mroth/weightedrand"
 
-func MakeChoices() map[Pair][]wr.Choice {
-	m := make(map[Pair][]wr.Choice)
+	fb "github.com/eiri/flabild/pkg/flabild"
+)
 
-	m[Pair{95, 95}] = []wr.Choice{
+func MakeChoices() map[fb.Pair][]wr.Choice {
+	m := make(map[fb.Pair][]wr.Choice)
+
+	m[fb.Pair{95, 95}] = []wr.Choice{
 		{Item: int32(97), Weight: 25416},
 		{Item: int32(98), Weight: 18413},
 		{Item: int32(99), Weight: 32107},
@@ -35,7 +39,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(122), Weight: 1387},
 	}
 
-	m[Pair{95, 97}] = []wr.Choice{
+	m[fb.Pair{95, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 28},
 		{Item: int32(98), Weight: 1178},
 		{Item: int32(99), Weight: 2185},
@@ -65,7 +69,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 98}] = []wr.Choice{
+	m[fb.Pair{95, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 3897},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 4},
@@ -94,7 +98,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 99}] = []wr.Choice{
+	m[fb.Pair{95, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 6453},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 10},
@@ -122,7 +126,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 100}] = []wr.Choice{
+	m[fb.Pair{95, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 1452},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 8},
@@ -151,7 +155,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 101}] = []wr.Choice{
+	m[fb.Pair{95, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 319},
 		{Item: int32(98), Weight: 82},
 		{Item: int32(99), Weight: 568},
@@ -181,7 +185,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 102}] = []wr.Choice{
+	m[fb.Pair{95, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 1700},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 8},
@@ -208,7 +212,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 103}] = []wr.Choice{
+	m[fb.Pair{95, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 2255},
 		{Item: int32(99), Weight: 3},
 		{Item: int32(100), Weight: 3},
@@ -232,7 +236,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 104}] = []wr.Choice{
+	m[fb.Pair{95, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 2850},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 4},
@@ -258,7 +262,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 105}] = []wr.Choice{
+	m[fb.Pair{95, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 59},
 		{Item: int32(98), Weight: 40},
 		{Item: int32(99), Weight: 323},
@@ -288,7 +292,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 106}] = []wr.Choice{
+	m[fb.Pair{95, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 896},
 		{Item: int32(99), Weight: 3},
 		{Item: int32(101), Weight: 440},
@@ -307,7 +311,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 107}] = []wr.Choice{
+	m[fb.Pair{95, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 825},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 2},
@@ -331,7 +335,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 108}] = []wr.Choice{
+	m[fb.Pair{95, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 2887},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 6},
@@ -357,7 +361,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 109}] = []wr.Choice{
+	m[fb.Pair{95, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 5048},
 		{Item: int32(98), Weight: 11},
 		{Item: int32(99), Weight: 9},
@@ -385,7 +389,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 110}] = []wr.Choice{
+	m[fb.Pair{95, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 1177},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 1},
@@ -409,7 +413,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 111}] = []wr.Choice{
+	m[fb.Pair{95, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 95},
 		{Item: int32(98), Weight: 681},
 		{Item: int32(99), Weight: 553},
@@ -439,7 +443,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 112}] = []wr.Choice{
+	m[fb.Pair{95, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 5769},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 5},
@@ -466,7 +470,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 113}] = []wr.Choice{
+	m[fb.Pair{95, 113}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(104), Weight: 1},
@@ -486,7 +490,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 114}] = []wr.Choice{
+	m[fb.Pair{95, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 2192},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 8},
@@ -511,7 +515,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 115}] = []wr.Choice{
+	m[fb.Pair{95, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 3297},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 3103},
@@ -540,7 +544,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 116}] = []wr.Choice{
+	m[fb.Pair{95, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 2642},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 26},
@@ -569,7 +573,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 117}] = []wr.Choice{
+	m[fb.Pair{95, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(98), Weight: 35},
 		{Item: int32(99), Weight: 9},
@@ -595,7 +599,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 118}] = []wr.Choice{
+	m[fb.Pair{95, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 1276},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 1},
@@ -616,7 +620,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 119}] = []wr.Choice{
+	m[fb.Pair{95, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 1797},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 1},
@@ -640,7 +644,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 120}] = []wr.Choice{
+	m[fb.Pair{95, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 119},
 		{Item: int32(99), Weight: 3},
 		{Item: int32(100), Weight: 2},
@@ -658,7 +662,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 121}] = []wr.Choice{
+	m[fb.Pair{95, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 395},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 5},
@@ -683,7 +687,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{95, 122}] = []wr.Choice{
+	m[fb.Pair{95, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 220},
 		{Item: int32(101), Weight: 225},
 		{Item: int32(104), Weight: 2},
@@ -699,7 +703,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{97, 97}] = []wr.Choice{
+	m[fb.Pair{97, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 2},
@@ -723,7 +727,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{97, 98}] = []wr.Choice{
+	m[fb.Pair{97, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 645},
 		{Item: int32(98), Weight: 577},
 		{Item: int32(99), Weight: 9},
@@ -751,7 +755,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 115},
 	}
 
-	m[Pair{97, 99}] = []wr.Choice{
+	m[fb.Pair{97, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 886},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 1228},
@@ -777,7 +781,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 342},
 	}
 
-	m[Pair{97, 100}] = []wr.Choice{
+	m[fb.Pair{97, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 705},
 		{Item: int32(98), Weight: 53},
 		{Item: int32(99), Weight: 46},
@@ -806,7 +810,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 934},
 	}
 
-	m[Pair{97, 101}] = []wr.Choice{
+	m[fb.Pair{97, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 244},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 122},
@@ -835,7 +839,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3325},
 	}
 
-	m[Pair{97, 102}] = []wr.Choice{
+	m[fb.Pair{97, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 61},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 1},
@@ -860,7 +864,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 112},
 	}
 
-	m[Pair{97, 103}] = []wr.Choice{
+	m[fb.Pair{97, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 716},
 		{Item: int32(98), Weight: 37},
 		{Item: int32(99), Weight: 1},
@@ -886,7 +890,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 179},
 	}
 
-	m[Pair{97, 104}] = []wr.Choice{
+	m[fb.Pair{97, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 188},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 3},
@@ -914,7 +918,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 429},
 	}
 
-	m[Pair{97, 105}] = []wr.Choice{
+	m[fb.Pair{97, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 64},
 		{Item: int32(98), Weight: 22},
 		{Item: int32(99), Weight: 209},
@@ -944,7 +948,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 177},
 	}
 
-	m[Pair{97, 106}] = []wr.Choice{
+	m[fb.Pair{97, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 75},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 54},
@@ -962,7 +966,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{97, 107}] = []wr.Choice{
+	m[fb.Pair{97, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 249},
 		{Item: int32(98), Weight: 8},
 		{Item: int32(99), Weight: 3},
@@ -989,7 +993,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 273},
 	}
 
-	m[Pair{97, 108}] = []wr.Choice{
+	m[fb.Pair{97, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 2240},
 		{Item: int32(98), Weight: 305},
 		{Item: int32(99), Weight: 726},
@@ -1019,7 +1023,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12459},
 	}
 
-	m[Pair{97, 109}] = []wr.Choice{
+	m[fb.Pair{97, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 1298},
 		{Item: int32(98), Weight: 1086},
 		{Item: int32(99), Weight: 12},
@@ -1047,7 +1051,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 665},
 	}
 
-	m[Pair{97, 110}] = []wr.Choice{
+	m[fb.Pair{97, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 2203},
 		{Item: int32(98), Weight: 46},
 		{Item: int32(99), Weight: 3061},
@@ -1077,7 +1081,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6927},
 	}
 
-	m[Pair{97, 111}] = []wr.Choice{
+	m[fb.Pair{97, 111}] = []wr.Choice{
 		{Item: int32(98), Weight: 8},
 		{Item: int32(99), Weight: 12},
 		{Item: int32(100), Weight: 8},
@@ -1104,7 +1108,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 87},
 	}
 
-	m[Pair{97, 112}] = []wr.Choice{
+	m[fb.Pair{97, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 609},
 		{Item: int32(98), Weight: 30},
 		{Item: int32(99), Weight: 5},
@@ -1130,7 +1134,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 277},
 	}
 
-	m[Pair{97, 113}] = []wr.Choice{
+	m[fb.Pair{97, 113}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(105), Weight: 6},
 		{Item: int32(108), Weight: 1},
@@ -1141,7 +1145,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{97, 114}] = []wr.Choice{
+	m[fb.Pair{97, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 2792},
 		{Item: int32(98), Weight: 1001},
 		{Item: int32(99), Weight: 2067},
@@ -1171,7 +1175,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2384},
 	}
 
-	m[Pair{97, 115}] = []wr.Choice{
+	m[fb.Pair{97, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 420},
 		{Item: int32(98), Weight: 36},
 		{Item: int32(99), Weight: 782},
@@ -1200,7 +1204,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2179},
 	}
 
-	m[Pair{97, 116}] = []wr.Choice{
+	m[fb.Pair{97, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 1801},
 		{Item: int32(98), Weight: 59},
 		{Item: int32(99), Weight: 586},
@@ -1228,7 +1232,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 858},
 	}
 
-	m[Pair{97, 117}] = []wr.Choice{
+	m[fb.Pair{97, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 14},
 		{Item: int32(98), Weight: 95},
 		{Item: int32(99), Weight: 289},
@@ -1257,7 +1261,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 155},
 	}
 
-	m[Pair{97, 118}] = []wr.Choice{
+	m[fb.Pair{97, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 611},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 6},
@@ -1275,7 +1279,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 27},
 	}
 
-	m[Pair{97, 119}] = []wr.Choice{
+	m[fb.Pair{97, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 326},
 		{Item: int32(98), Weight: 70},
 		{Item: int32(99), Weight: 15},
@@ -1302,7 +1306,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 215},
 	}
 
-	m[Pair{97, 120}] = []wr.Choice{
+	m[fb.Pair{97, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 90},
 		{Item: int32(98), Weight: 11},
 		{Item: int32(99), Weight: 5},
@@ -1326,7 +1330,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 174},
 	}
 
-	m[Pair{97, 121}] = []wr.Choice{
+	m[fb.Pair{97, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 270},
 		{Item: int32(98), Weight: 71},
 		{Item: int32(99), Weight: 21},
@@ -1353,7 +1357,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 696},
 	}
 
-	m[Pair{97, 122}] = []wr.Choice{
+	m[fb.Pair{97, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 158},
 		{Item: int32(100), Weight: 11},
 		{Item: int32(101), Weight: 308},
@@ -1375,7 +1379,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 18},
 	}
 
-	m[Pair{98, 97}] = []wr.Choice{
+	m[fb.Pair{98, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 25},
 		{Item: int32(98), Weight: 306},
 		{Item: int32(99), Weight: 1122},
@@ -1405,7 +1409,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 230},
 	}
 
-	m[Pair{98, 98}] = []wr.Choice{
+	m[fb.Pair{98, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 169},
 		{Item: int32(101), Weight: 457},
 		{Item: int32(105), Weight: 384},
@@ -1419,7 +1423,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{98, 99}] = []wr.Choice{
+	m[fb.Pair{98, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 57},
 		{Item: int32(100), Weight: 4},
 		{Item: int32(101), Weight: 14},
@@ -1434,7 +1438,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{98, 100}] = []wr.Choice{
+	m[fb.Pair{98, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(101), Weight: 98},
 		{Item: int32(102), Weight: 1},
@@ -1449,7 +1453,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{98, 101}] = []wr.Choice{
+	m[fb.Pair{98, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 672},
 		{Item: int32(98), Weight: 58},
 		{Item: int32(99), Weight: 317},
@@ -1479,7 +1483,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 284},
 	}
 
-	m[Pair{98, 102}] = []wr.Choice{
+	m[fb.Pair{98, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(101), Weight: 15},
 		{Item: int32(105), Weight: 25},
@@ -1490,7 +1494,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{98, 103}] = []wr.Choice{
+	m[fb.Pair{98, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 25},
 		{Item: int32(105), Weight: 2},
@@ -1503,7 +1507,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{98, 104}] = []wr.Choice{
+	m[fb.Pair{98, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 59},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 27},
@@ -1517,7 +1521,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{98, 105}] = []wr.Choice{
+	m[fb.Pair{98, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 692},
 		{Item: int32(98), Weight: 208},
 		{Item: int32(99), Weight: 505},
@@ -1547,7 +1551,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 76},
 	}
 
-	m[Pair{98, 106}] = []wr.Choice{
+	m[fb.Pair{98, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 167},
 		{Item: int32(105), Weight: 2},
@@ -1558,7 +1562,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{98, 107}] = []wr.Choice{
+	m[fb.Pair{98, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 1},
@@ -1574,7 +1578,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{98, 108}] = []wr.Choice{
+	m[fb.Pair{98, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1023},
 		{Item: int32(100), Weight: 3},
 		{Item: int32(101), Weight: 8101},
@@ -1590,7 +1594,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{98, 109}] = []wr.Choice{
+	m[fb.Pair{98, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 59},
 		{Item: int32(101), Weight: 71},
 		{Item: int32(104), Weight: 2},
@@ -1602,7 +1606,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{98, 110}] = []wr.Choice{
+	m[fb.Pair{98, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 61},
@@ -1613,7 +1617,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{98, 111}] = []wr.Choice{
+	m[fb.Pair{98, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 543},
 		{Item: int32(98), Weight: 138},
 		{Item: int32(99), Weight: 128},
@@ -1643,7 +1647,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 94},
 	}
 
-	m[Pair{98, 112}] = []wr.Choice{
+	m[fb.Pair{98, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 34},
 		{Item: int32(101), Weight: 37},
 		{Item: int32(104), Weight: 13},
@@ -1658,11 +1662,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{98, 113}] = []wr.Choice{
+	m[fb.Pair{98, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 10},
 	}
 
-	m[Pair{98, 114}] = []wr.Choice{
+	m[fb.Pair{98, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 2097},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 894},
@@ -1677,7 +1681,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{98, 115}] = []wr.Choice{
+	m[fb.Pair{98, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 152},
@@ -1701,7 +1705,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 232},
 	}
 
-	m[Pair{98, 116}] = []wr.Choice{
+	m[fb.Pair{98, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 58},
 		{Item: int32(101), Weight: 117},
 		{Item: int32(102), Weight: 10},
@@ -1718,7 +1722,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{98, 117}] = []wr.Choice{
+	m[fb.Pair{98, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 79},
 		{Item: int32(99), Weight: 272},
@@ -1747,7 +1751,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 35},
 	}
 
-	m[Pair{98, 118}] = []wr.Choice{
+	m[fb.Pair{98, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 74},
 		{Item: int32(105), Weight: 44},
@@ -1756,7 +1760,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{98, 119}] = []wr.Choice{
+	m[fb.Pair{98, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(101), Weight: 16},
 		{Item: int32(104), Weight: 3},
@@ -1766,13 +1770,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{98, 120}] = []wr.Choice{
+	m[fb.Pair{98, 120}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(115), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{98, 121}] = []wr.Choice{
+	m[fb.Pair{98, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 16},
@@ -1798,7 +1802,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 195},
 	}
 
-	m[Pair{98, 122}] = []wr.Choice{
+	m[fb.Pair{98, 122}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(105), Weight: 1},
@@ -1808,7 +1812,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{99, 97}] = []wr.Choice{
+	m[fb.Pair{99, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 10},
 		{Item: int32(98), Weight: 575},
 		{Item: int32(99), Weight: 438},
@@ -1838,7 +1842,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 443},
 	}
 
-	m[Pair{99, 98}] = []wr.Choice{
+	m[fb.Pair{99, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
@@ -1851,7 +1855,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{99, 99}] = []wr.Choice{
+	m[fb.Pair{99, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 300},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 343},
@@ -1869,7 +1873,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{99, 100}] = []wr.Choice{
+	m[fb.Pair{99, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(102), Weight: 1},
@@ -1882,7 +1886,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{99, 101}] = []wr.Choice{
+	m[fb.Pair{99, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 1137},
 		{Item: int32(98), Weight: 67},
 		{Item: int32(99), Weight: 83},
@@ -1911,7 +1915,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2677},
 	}
 
-	m[Pair{99, 102}] = []wr.Choice{
+	m[fb.Pair{99, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(104), Weight: 2},
@@ -1924,7 +1928,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{99, 103}] = []wr.Choice{
+	m[fb.Pair{99, 103}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(109), Weight: 1},
@@ -1935,7 +1939,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{99, 104}] = []wr.Choice{
+	m[fb.Pair{99, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 3304},
 		{Item: int32(98), Weight: 98},
 		{Item: int32(99), Weight: 58},
@@ -1963,7 +1967,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1214},
 	}
 
-	m[Pair{99, 105}] = []wr.Choice{
+	m[fb.Pair{99, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 1496},
 		{Item: int32(98), Weight: 204},
 		{Item: int32(99), Weight: 308},
@@ -1990,7 +1994,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 113},
 	}
 
-	m[Pair{99, 107}] = []wr.Choice{
+	m[fb.Pair{99, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 244},
 		{Item: int32(98), Weight: 171},
 		{Item: int32(99), Weight: 36},
@@ -2019,7 +2023,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1490},
 	}
 
-	m[Pair{99, 108}] = []wr.Choice{
+	m[fb.Pair{99, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1333},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(101), Weight: 1369},
@@ -2033,7 +2037,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{99, 109}] = []wr.Choice{
+	m[fb.Pair{99, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 18},
 		{Item: int32(100), Weight: 5},
 		{Item: int32(101), Weight: 10},
@@ -2046,7 +2050,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{99, 110}] = []wr.Choice{
+	m[fb.Pair{99, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 127},
 		{Item: int32(105), Weight: 49},
@@ -2056,7 +2060,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{99, 111}] = []wr.Choice{
+	m[fb.Pair{99, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 626},
 		{Item: int32(98), Weight: 224},
 		{Item: int32(99), Weight: 932},
@@ -2086,7 +2090,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 234},
 	}
 
-	m[Pair{99, 112}] = []wr.Choice{
+	m[fb.Pair{99, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 1},
@@ -2103,12 +2107,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{99, 113}] = []wr.Choice{
+	m[fb.Pair{99, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 176},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{99, 114}] = []wr.Choice{
+	m[fb.Pair{99, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 1763},
 		{Item: int32(99), Weight: 5},
 		{Item: int32(101), Weight: 1528},
@@ -2127,7 +2131,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{99, 115}] = []wr.Choice{
+	m[fb.Pair{99, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(101), Weight: 2},
@@ -2145,7 +2149,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 970},
 	}
 
-	m[Pair{99, 116}] = []wr.Choice{
+	m[fb.Pair{99, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 918},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 4},
@@ -2170,7 +2174,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 597},
 	}
 
-	m[Pair{99, 117}] = []wr.Choice{
+	m[fb.Pair{99, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 81},
 		{Item: int32(98), Weight: 223},
 		{Item: int32(99), Weight: 81},
@@ -2196,12 +2200,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 27},
 	}
 
-	m[Pair{99, 118}] = []wr.Choice{
+	m[fb.Pair{99, 118}] = []wr.Choice{
 		{Item: int32(114), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{99, 119}] = []wr.Choice{
+	m[fb.Pair{99, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 2},
@@ -2213,11 +2217,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{99, 120}] = []wr.Choice{
+	m[fb.Pair{99, 120}] = []wr.Choice{
 		{Item: int32(111), Weight: 1},
 	}
 
-	m[Pair{99, 121}] = []wr.Choice{
+	m[fb.Pair{99, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 279},
 		{Item: int32(98), Weight: 23},
 		{Item: int32(99), Weight: 431},
@@ -2242,13 +2246,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1236},
 	}
 
-	m[Pair{99, 122}] = []wr.Choice{
+	m[fb.Pair{99, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(101), Weight: 17},
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{100, 97}] = []wr.Choice{
+	m[fb.Pair{100, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(98), Weight: 485},
 		{Item: int32(99), Weight: 507},
@@ -2278,7 +2282,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 555},
 	}
 
-	m[Pair{100, 98}] = []wr.Choice{
+	m[fb.Pair{100, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 78},
 		{Item: int32(101), Weight: 47},
 		{Item: int32(104), Weight: 1},
@@ -2293,7 +2297,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{100, 99}] = []wr.Choice{
+	m[fb.Pair{100, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 72},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 1},
@@ -2306,7 +2310,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{100, 100}] = []wr.Choice{
+	m[fb.Pair{100, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 91},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -2326,7 +2330,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 27},
 	}
 
-	m[Pair{100, 101}] = []wr.Choice{
+	m[fb.Pair{100, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 882},
 		{Item: int32(98), Weight: 320},
 		{Item: int32(99), Weight: 1543},
@@ -2356,7 +2360,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2038},
 	}
 
-	m[Pair{100, 102}] = []wr.Choice{
+	m[fb.Pair{100, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 69},
 		{Item: int32(101), Weight: 13},
 		{Item: int32(102), Weight: 2},
@@ -2369,7 +2373,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{100, 103}] = []wr.Choice{
+	m[fb.Pair{100, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 34},
 		{Item: int32(101), Weight: 711},
 		{Item: int32(104), Weight: 1},
@@ -2386,7 +2390,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{100, 104}] = []wr.Choice{
+	m[fb.Pair{100, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 107},
 		{Item: int32(101), Weight: 150},
 		{Item: int32(105), Weight: 41},
@@ -2401,7 +2405,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{100, 105}] = []wr.Choice{
+	m[fb.Pair{100, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 2445},
 		{Item: int32(98), Weight: 229},
 		{Item: int32(99), Weight: 1950},
@@ -2431,7 +2435,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 141},
 	}
 
-	m[Pair{100, 106}] = []wr.Choice{
+	m[fb.Pair{100, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 43},
 		{Item: int32(101), Weight: 36},
 		{Item: int32(105), Weight: 21},
@@ -2442,7 +2446,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{100, 107}] = []wr.Choice{
+	m[fb.Pair{100, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 13},
 		{Item: int32(102), Weight: 1},
@@ -2456,7 +2460,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{100, 108}] = []wr.Choice{
+	m[fb.Pair{100, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 77},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -2471,7 +2475,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{100, 109}] = []wr.Choice{
+	m[fb.Pair{100, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 167},
 		{Item: int32(101), Weight: 109},
 		{Item: int32(105), Weight: 224},
@@ -2482,7 +2486,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{100, 110}] = []wr.Choice{
+	m[fb.Pair{100, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 47},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 1290},
@@ -2495,7 +2499,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{100, 111}] = []wr.Choice{
+	m[fb.Pair{100, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 133},
 		{Item: int32(98), Weight: 110},
 		{Item: int32(99), Weight: 576},
@@ -2525,7 +2529,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 340},
 	}
 
-	m[Pair{100, 112}] = []wr.Choice{
+	m[fb.Pair{100, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 52},
 		{Item: int32(101), Weight: 10},
 		{Item: int32(104), Weight: 2},
@@ -2538,13 +2542,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{100, 113}] = []wr.Choice{
+	m[fb.Pair{100, 113}] = []wr.Choice{
 		{Item: int32(114), Weight: 1},
 		{Item: int32(117), Weight: 10},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{100, 114}] = []wr.Choice{
+	m[fb.Pair{100, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 1212},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 2},
@@ -2557,7 +2561,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9},
 	}
 
-	m[Pair{100, 115}] = []wr.Choice{
+	m[fb.Pair{100, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 32},
@@ -2580,7 +2584,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1933},
 	}
 
-	m[Pair{100, 116}] = []wr.Choice{
+	m[fb.Pair{100, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 8},
@@ -2595,7 +2599,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{100, 117}] = []wr.Choice{
+	m[fb.Pair{100, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 194},
 		{Item: int32(98), Weight: 78},
 		{Item: int32(99), Weight: 942},
@@ -2624,7 +2628,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 33},
 	}
 
-	m[Pair{100, 118}] = []wr.Choice{
+	m[fb.Pair{100, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 66},
 		{Item: int32(101), Weight: 192},
 		{Item: int32(105), Weight: 75},
@@ -2633,7 +2637,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{100, 119}] = []wr.Choice{
+	m[fb.Pair{100, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 166},
 		{Item: int32(101), Weight: 74},
 		{Item: int32(104), Weight: 4},
@@ -2646,12 +2650,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 2},
 	}
 
-	m[Pair{100, 120}] = []wr.Choice{
+	m[fb.Pair{100, 120}] = []wr.Choice{
 		{Item: int32(116), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{100, 121}] = []wr.Choice{
+	m[fb.Pair{100, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 38},
 		{Item: int32(98), Weight: 26},
 		{Item: int32(99), Weight: 14},
@@ -2677,7 +2681,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 490},
 	}
 
-	m[Pair{100, 122}] = []wr.Choice{
+	m[fb.Pair{100, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 6},
 		{Item: int32(104), Weight: 1},
@@ -2687,7 +2691,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{101, 97}] = []wr.Choice{
+	m[fb.Pair{101, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 723},
 		{Item: int32(99), Weight: 793},
@@ -2716,7 +2720,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 828},
 	}
 
-	m[Pair{101, 98}] = []wr.Choice{
+	m[fb.Pair{101, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 452},
 		{Item: int32(98), Weight: 68},
 		{Item: int32(99), Weight: 6},
@@ -2739,7 +2743,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 44},
 	}
 
-	m[Pair{101, 99}] = []wr.Choice{
+	m[fb.Pair{101, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 1102},
 		{Item: int32(98), Weight: 9},
 		{Item: int32(99), Weight: 172},
@@ -2765,7 +2769,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 79},
 	}
 
-	m[Pair{101, 100}] = []wr.Choice{
+	m[fb.Pair{101, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 558},
 		{Item: int32(98), Weight: 65},
 		{Item: int32(99), Weight: 24},
@@ -2792,7 +2796,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 22396},
 	}
 
-	m[Pair{101, 101}] = []wr.Choice{
+	m[fb.Pair{101, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 44},
 		{Item: int32(98), Weight: 80},
 		{Item: int32(99), Weight: 177},
@@ -2822,7 +2826,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1025},
 	}
 
-	m[Pair{101, 102}] = []wr.Choice{
+	m[fb.Pair{101, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 329},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 5},
@@ -2847,7 +2851,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 96},
 	}
 
-	m[Pair{101, 103}] = []wr.Choice{
+	m[fb.Pair{101, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 1031},
 		{Item: int32(98), Weight: 11},
 		{Item: int32(100), Weight: 1},
@@ -2872,7 +2876,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 93},
 	}
 
-	m[Pair{101, 104}] = []wr.Choice{
+	m[fb.Pair{101, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 231},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 487},
@@ -2892,7 +2896,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 73},
 	}
 
-	m[Pair{101, 105}] = []wr.Choice{
+	m[fb.Pair{101, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 118},
 		{Item: int32(98), Weight: 13},
 		{Item: int32(99), Weight: 164},
@@ -2920,7 +2924,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 129},
 	}
 
-	m[Pair{101, 106}] = []wr.Choice{
+	m[fb.Pair{101, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 61},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 105},
@@ -2930,7 +2934,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{101, 107}] = []wr.Choice{
+	m[fb.Pair{101, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 62},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 1},
@@ -2954,7 +2958,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 96},
 	}
 
-	m[Pair{101, 108}] = []wr.Choice{
+	m[fb.Pair{101, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1555},
 		{Item: int32(98), Weight: 81},
 		{Item: int32(99), Weight: 110},
@@ -2983,7 +2987,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1235},
 	}
 
-	m[Pair{101, 109}] = []wr.Choice{
+	m[fb.Pair{101, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 2060},
 		{Item: int32(98), Weight: 912},
 		{Item: int32(99), Weight: 10},
@@ -3010,7 +3014,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 202},
 	}
 
-	m[Pair{101, 110}] = []wr.Choice{
+	m[fb.Pair{101, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 1571},
 		{Item: int32(98), Weight: 84},
 		{Item: int32(99), Weight: 2945},
@@ -3039,7 +3043,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2762},
 	}
 
-	m[Pair{101, 111}] = []wr.Choice{
+	m[fb.Pair{101, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 47},
 		{Item: int32(98), Weight: 123},
 		{Item: int32(99), Weight: 298},
@@ -3067,7 +3071,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 48},
 	}
 
-	m[Pair{101, 112}] = []wr.Choice{
+	m[fb.Pair{101, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 812},
 		{Item: int32(98), Weight: 15},
 		{Item: int32(99), Weight: 9},
@@ -3093,7 +3097,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 156},
 	}
 
-	m[Pair{101, 113}] = []wr.Choice{
+	m[fb.Pair{101, 113}] = []wr.Choice{
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(102), Weight: 1},
@@ -3105,7 +3109,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{101, 114}] = []wr.Choice{
+	m[fb.Pair{101, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 4952},
 		{Item: int32(98), Weight: 1104},
 		{Item: int32(99), Weight: 2240},
@@ -3135,7 +3139,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 15055},
 	}
 
-	m[Pair{101, 115}] = []wr.Choice{
+	m[fb.Pair{101, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 351},
 		{Item: int32(98), Weight: 76},
 		{Item: int32(99), Weight: 1280},
@@ -3163,7 +3167,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17423},
 	}
 
-	m[Pair{101, 116}] = []wr.Choice{
+	m[fb.Pair{101, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 2002},
 		{Item: int32(98), Weight: 44},
 		{Item: int32(99), Weight: 189},
@@ -3191,7 +3195,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1888},
 	}
 
-	m[Pair{101, 117}] = []wr.Choice{
+	m[fb.Pair{101, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(98), Weight: 15},
 		{Item: int32(99), Weight: 339},
@@ -3217,7 +3221,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 38},
 	}
 
-	m[Pair{101, 118}] = []wr.Choice{
+	m[fb.Pair{101, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 612},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 1324},
@@ -3237,7 +3241,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 19},
 	}
 
-	m[Pair{101, 119}] = []wr.Choice{
+	m[fb.Pair{101, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 476},
 		{Item: int32(98), Weight: 25},
 		{Item: int32(99), Weight: 12},
@@ -3262,7 +3266,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 204},
 	}
 
-	m[Pair{101, 120}] = []wr.Choice{
+	m[fb.Pair{101, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 546},
 		{Item: int32(99), Weight: 584},
 		{Item: int32(100), Weight: 10},
@@ -3287,7 +3291,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 200},
 	}
 
-	m[Pair{101, 121}] = []wr.Choice{
+	m[fb.Pair{101, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 98},
 		{Item: int32(98), Weight: 37},
 		{Item: int32(99), Weight: 13},
@@ -3315,7 +3319,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 571},
 	}
 
-	m[Pair{101, 122}] = []wr.Choice{
+	m[fb.Pair{101, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 45},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 6},
@@ -3339,7 +3343,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 39},
 	}
 
-	m[Pair{102, 97}] = []wr.Choice{
+	m[fb.Pair{102, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(98), Weight: 132},
 		{Item: int32(99), Weight: 680},
@@ -3369,7 +3373,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 36},
 	}
 
-	m[Pair{102, 98}] = []wr.Choice{
+	m[fb.Pair{102, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(101), Weight: 10},
 		{Item: int32(105), Weight: 6},
@@ -3380,7 +3384,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{102, 99}] = []wr.Choice{
+	m[fb.Pair{102, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 10},
 		{Item: int32(104), Weight: 4},
 		{Item: int32(105), Weight: 2},
@@ -3393,7 +3397,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{102, 100}] = []wr.Choice{
+	m[fb.Pair{102, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
@@ -3404,7 +3408,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{102, 101}] = []wr.Choice{
+	m[fb.Pair{102, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 282},
 		{Item: int32(98), Weight: 42},
 		{Item: int32(99), Weight: 469},
@@ -3432,7 +3436,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 142},
 	}
 
-	m[Pair{102, 102}] = []wr.Choice{
+	m[fb.Pair{102, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 119},
 		{Item: int32(98), Weight: 12},
 		{Item: int32(99), Weight: 12},
@@ -3456,7 +3460,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 286},
 	}
 
-	m[Pair{102, 103}] = []wr.Choice{
+	m[fb.Pair{102, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(104), Weight: 6},
@@ -3467,7 +3471,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{102, 104}] = []wr.Choice{
+	m[fb.Pair{102, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 10},
 		{Item: int32(111), Weight: 14},
@@ -3476,7 +3480,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{102, 105}] = []wr.Choice{
+	m[fb.Pair{102, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 254},
 		{Item: int32(98), Weight: 267},
 		{Item: int32(99), Weight: 1481},
@@ -3504,13 +3508,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{102, 106}] = []wr.Choice{
+	m[fb.Pair{102, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(111), Weight: 4},
 	}
 
-	m[Pair{102, 107}] = []wr.Choice{
+	m[fb.Pair{102, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 7},
@@ -3518,7 +3522,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{102, 108}] = []wr.Choice{
+	m[fb.Pair{102, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1031},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 2},
@@ -3535,7 +3539,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{102, 109}] = []wr.Choice{
+	m[fb.Pair{102, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 22},
 		{Item: int32(101), Weight: 14},
 		{Item: int32(111), Weight: 3},
@@ -3544,7 +3548,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{102, 110}] = []wr.Choice{
+	m[fb.Pair{102, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 35},
 		{Item: int32(105), Weight: 5},
@@ -3553,7 +3557,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{102, 111}] = []wr.Choice{
+	m[fb.Pair{102, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 42},
 		{Item: int32(98), Weight: 9},
 		{Item: int32(99), Weight: 100},
@@ -3581,7 +3585,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 24},
 	}
 
-	m[Pair{102, 112}] = []wr.Choice{
+	m[fb.Pair{102, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 6},
 		{Item: int32(104), Weight: 1},
@@ -3594,7 +3598,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{102, 114}] = []wr.Choice{
+	m[fb.Pair{102, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 916},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 570},
@@ -3608,7 +3612,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{102, 115}] = []wr.Choice{
+	m[fb.Pair{102, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 8},
@@ -3624,7 +3628,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 246},
 	}
 
-	m[Pair{102, 116}] = []wr.Choice{
+	m[fb.Pair{102, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 55},
 		{Item: int32(98), Weight: 14},
 		{Item: int32(99), Weight: 1},
@@ -3648,7 +3652,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 312},
 	}
 
-	m[Pair{102, 117}] = []wr.Choice{
+	m[fb.Pair{102, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(98), Weight: 9},
 		{Item: int32(99), Weight: 49},
@@ -3671,12 +3675,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{102, 118}] = []wr.Choice{
+	m[fb.Pair{102, 118}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{102, 119}] = []wr.Choice{
+	m[fb.Pair{102, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 5},
@@ -3685,11 +3689,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{102, 120}] = []wr.Choice{
+	m[fb.Pair{102, 120}] = []wr.Choice{
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{102, 121}] = []wr.Choice{
+	m[fb.Pair{102, 121}] = []wr.Choice{
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 1},
@@ -3706,13 +3710,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 596},
 	}
 
-	m[Pair{102, 122}] = []wr.Choice{
+	m[fb.Pair{102, 122}] = []wr.Choice{
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{103, 97}] = []wr.Choice{
+	m[fb.Pair{103, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(98), Weight: 278},
 		{Item: int32(99), Weight: 75},
@@ -3740,7 +3744,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 292},
 	}
 
-	m[Pair{103, 98}] = []wr.Choice{
+	m[fb.Pair{103, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 43},
 		{Item: int32(101), Weight: 35},
 		{Item: int32(105), Weight: 22},
@@ -3751,7 +3755,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 4},
 	}
 
-	m[Pair{103, 99}] = []wr.Choice{
+	m[fb.Pair{103, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(104), Weight: 3},
@@ -3762,7 +3766,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{103, 100}] = []wr.Choice{
+	m[fb.Pair{103, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 37},
 		{Item: int32(101), Weight: 5},
 		{Item: int32(105), Weight: 13},
@@ -3774,7 +3778,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{103, 101}] = []wr.Choice{
+	m[fb.Pair{103, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 402},
 		{Item: int32(98), Weight: 62},
 		{Item: int32(99), Weight: 42},
@@ -3801,7 +3805,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1804},
 	}
 
-	m[Pair{103, 102}] = []wr.Choice{
+	m[fb.Pair{103, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(101), Weight: 8},
 		{Item: int32(105), Weight: 47},
@@ -3812,7 +3816,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{103, 103}] = []wr.Choice{
+	m[fb.Pair{103, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 193},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 4},
@@ -3834,7 +3838,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 22},
 	}
 
-	m[Pair{103, 104}] = []wr.Choice{
+	m[fb.Pair{103, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 154},
 		{Item: int32(98), Weight: 75},
 		{Item: int32(99), Weight: 6},
@@ -3862,7 +3866,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 202},
 	}
 
-	m[Pair{103, 105}] = []wr.Choice{
+	m[fb.Pair{103, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 730},
 		{Item: int32(98), Weight: 228},
 		{Item: int32(99), Weight: 1567},
@@ -3888,13 +3892,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 99},
 	}
 
-	m[Pair{103, 106}] = []wr.Choice{
+	m[fb.Pair{103, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{103, 107}] = []wr.Choice{
+	m[fb.Pair{103, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(104), Weight: 1},
@@ -3906,7 +3910,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{103, 108}] = []wr.Choice{
+	m[fb.Pair{103, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 597},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -3920,7 +3924,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{103, 109}] = []wr.Choice{
+	m[fb.Pair{103, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 441},
 		{Item: int32(101), Weight: 211},
 		{Item: int32(104), Weight: 1},
@@ -3934,7 +3938,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 22},
 	}
 
-	m[Pair{103, 110}] = []wr.Choice{
+	m[fb.Pair{103, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 657},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 2},
@@ -3957,7 +3961,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 93},
 	}
 
-	m[Pair{103, 111}] = []wr.Choice{
+	m[fb.Pair{103, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 97},
 		{Item: int32(98), Weight: 109},
 		{Item: int32(99), Weight: 86},
@@ -3986,7 +3990,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 233},
 	}
 
-	m[Pair{103, 112}] = []wr.Choice{
+	m[fb.Pair{103, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -4002,11 +4006,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{103, 113}] = []wr.Choice{
+	m[fb.Pair{103, 113}] = []wr.Choice{
 		{Item: int32(116), Weight: 1},
 	}
 
-	m[Pair{103, 114}] = []wr.Choice{
+	m[fb.Pair{103, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 4528},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 1004},
@@ -4023,7 +4027,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{103, 115}] = []wr.Choice{
+	m[fb.Pair{103, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 4},
@@ -4046,7 +4050,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1378},
 	}
 
-	m[Pair{103, 116}] = []wr.Choice{
+	m[fb.Pair{103, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 30},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 1},
@@ -4063,7 +4067,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{103, 117}] = []wr.Choice{
+	m[fb.Pair{103, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 532},
 		{Item: int32(98), Weight: 32},
 		{Item: int32(99), Weight: 4},
@@ -4089,13 +4093,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 24},
 	}
 
-	m[Pair{103, 118}] = []wr.Choice{
+	m[fb.Pair{103, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(110), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{103, 119}] = []wr.Choice{
+	m[fb.Pair{103, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 50},
 		{Item: int32(101), Weight: 34},
 		{Item: int32(104), Weight: 5},
@@ -4106,7 +4110,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 4},
 	}
 
-	m[Pair{103, 121}] = []wr.Choice{
+	m[fb.Pair{103, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 20},
 		{Item: int32(98), Weight: 9},
 		{Item: int32(99), Weight: 1},
@@ -4128,12 +4132,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1300},
 	}
 
-	m[Pair{103, 122}] = []wr.Choice{
+	m[fb.Pair{103, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(119), Weight: 1},
 	}
 
-	m[Pair{104, 97}] = []wr.Choice{
+	m[fb.Pair{104, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 19},
 		{Item: int32(98), Weight: 690},
 		{Item: int32(99), Weight: 367},
@@ -4163,7 +4167,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 368},
 	}
 
-	m[Pair{104, 98}] = []wr.Choice{
+	m[fb.Pair{104, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 55},
 		{Item: int32(101), Weight: 36},
 		{Item: int32(105), Weight: 19},
@@ -4176,7 +4180,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{104, 99}] = []wr.Choice{
+	m[fb.Pair{104, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(102), Weight: 1},
@@ -4188,7 +4192,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 12},
 	}
 
-	m[Pair{104, 100}] = []wr.Choice{
+	m[fb.Pair{104, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 20},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 17},
@@ -4203,7 +4207,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{104, 101}] = []wr.Choice{
+	m[fb.Pair{104, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 2090},
 		{Item: int32(98), Weight: 121},
 		{Item: int32(99), Weight: 484},
@@ -4233,7 +4237,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 440},
 	}
 
-	m[Pair{104, 102}] = []wr.Choice{
+	m[fb.Pair{104, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(105), Weight: 30},
@@ -4245,7 +4249,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{104, 103}] = []wr.Choice{
+	m[fb.Pair{104, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 19},
 		{Item: int32(101), Weight: 5},
 		{Item: int32(105), Weight: 8},
@@ -4259,7 +4263,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{104, 104}] = []wr.Choice{
+	m[fb.Pair{104, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 36},
@@ -4270,7 +4274,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{104, 105}] = []wr.Choice{
+	m[fb.Pair{104, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 891},
 		{Item: int32(98), Weight: 260},
 		{Item: int32(99), Weight: 1867},
@@ -4300,7 +4304,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 227},
 	}
 
-	m[Pair{104, 106}] = []wr.Choice{
+	m[fb.Pair{104, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 2},
@@ -4308,7 +4312,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(111), Weight: 6},
 	}
 
-	m[Pair{104, 107}] = []wr.Choice{
+	m[fb.Pair{104, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 19},
 		{Item: int32(101), Weight: 19},
 		{Item: int32(102), Weight: 2},
@@ -4321,7 +4325,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{104, 108}] = []wr.Choice{
+	m[fb.Pair{104, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 103},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(100), Weight: 1},
@@ -4340,7 +4344,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{104, 109}] = []wr.Choice{
+	m[fb.Pair{104, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 248},
 		{Item: int32(101), Weight: 302},
 		{Item: int32(103), Weight: 1},
@@ -4356,7 +4360,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 45},
 	}
 
-	m[Pair{104, 110}] = []wr.Choice{
+	m[fb.Pair{104, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 55},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -4375,7 +4379,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{104, 111}] = []wr.Choice{
+	m[fb.Pair{104, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 182},
 		{Item: int32(98), Weight: 593},
 		{Item: int32(99), Weight: 390},
@@ -4405,7 +4409,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 121},
 	}
 
-	m[Pair{104, 112}] = []wr.Choice{
+	m[fb.Pair{104, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 30},
 		{Item: int32(101), Weight: 9},
 		{Item: int32(104), Weight: 7},
@@ -4419,12 +4423,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{104, 113}] = []wr.Choice{
+	m[fb.Pair{104, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 11},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{104, 114}] = []wr.Choice{
+	m[fb.Pair{104, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 527},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 2},
@@ -4442,7 +4446,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 18},
 	}
 
-	m[Pair{104, 115}] = []wr.Choice{
+	m[fb.Pair{104, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(99), Weight: 6},
 		{Item: int32(100), Weight: 1},
@@ -4463,7 +4467,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 599},
 	}
 
-	m[Pair{104, 116}] = []wr.Choice{
+	m[fb.Pair{104, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 58},
 		{Item: int32(98), Weight: 10},
 		{Item: int32(99), Weight: 12},
@@ -4490,7 +4494,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 553},
 	}
 
-	m[Pair{104, 117}] = []wr.Choice{
+	m[fb.Pair{104, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 80},
 		{Item: int32(98), Weight: 57},
 		{Item: int32(99), Weight: 88},
@@ -4518,7 +4522,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 32},
 	}
 
-	m[Pair{104, 118}] = []wr.Choice{
+	m[fb.Pair{104, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(101), Weight: 7},
 		{Item: int32(104), Weight: 1},
@@ -4528,7 +4532,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{104, 119}] = []wr.Choice{
+	m[fb.Pair{104, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 177},
 		{Item: int32(101), Weight: 53},
 		{Item: int32(104), Weight: 14},
@@ -4541,7 +4545,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{104, 121}] = []wr.Choice{
+	m[fb.Pair{104, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 139},
 		{Item: int32(98), Weight: 55},
 		{Item: int32(99), Weight: 117},
@@ -4569,7 +4573,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1289},
 	}
 
-	m[Pair{104, 122}] = []wr.Choice{
+	m[fb.Pair{104, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 6},
 		{Item: int32(111), Weight: 6},
@@ -4577,7 +4581,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{105, 97}] = []wr.Choice{
+	m[fb.Pair{105, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(98), Weight: 603},
 		{Item: int32(99), Weight: 960},
@@ -4606,7 +4610,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5761},
 	}
 
-	m[Pair{105, 98}] = []wr.Choice{
+	m[fb.Pair{105, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 293},
 		{Item: int32(98), Weight: 311},
 		{Item: int32(99), Weight: 6},
@@ -4629,7 +4633,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 72},
 	}
 
-	m[Pair{105, 99}] = []wr.Choice{
+	m[fb.Pair{105, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 9348},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 109},
@@ -4656,7 +4660,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 13057},
 	}
 
-	m[Pair{105, 100}] = []wr.Choice{
+	m[fb.Pair{105, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 2788},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 8},
@@ -4684,7 +4688,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3227},
 	}
 
-	m[Pair{105, 101}] = []wr.Choice{
+	m[fb.Pair{105, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(98), Weight: 40},
 		{Item: int32(99), Weight: 197},
@@ -4713,7 +4717,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1066},
 	}
 
-	m[Pair{105, 102}] = []wr.Choice{
+	m[fb.Pair{105, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 132},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 2},
@@ -4731,7 +4735,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 62},
 	}
 
-	m[Pair{105, 103}] = []wr.Choice{
+	m[fb.Pair{105, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 776},
 		{Item: int32(98), Weight: 12},
 		{Item: int32(100), Weight: 7},
@@ -4755,7 +4759,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 122},
 	}
 
-	m[Pair{105, 104}] = []wr.Choice{
+	m[fb.Pair{105, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 44},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 96},
@@ -4773,7 +4777,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{105, 105}] = []wr.Choice{
+	m[fb.Pair{105, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 242},
@@ -4794,7 +4798,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 134},
 	}
 
-	m[Pair{105, 106}] = []wr.Choice{
+	m[fb.Pair{105, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 31},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -4814,7 +4818,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{105, 107}] = []wr.Choice{
+	m[fb.Pair{105, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 144},
 		{Item: int32(100), Weight: 4},
 		{Item: int32(101), Weight: 1885},
@@ -4835,7 +4839,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 149},
 	}
 
-	m[Pair{105, 108}] = []wr.Choice{
+	m[fb.Pair{105, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1128},
 		{Item: int32(98), Weight: 94},
 		{Item: int32(99), Weight: 56},
@@ -4864,7 +4868,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 845},
 	}
 
-	m[Pair{105, 109}] = []wr.Choice{
+	m[fb.Pair{105, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 1185},
 		{Item: int32(98), Weight: 528},
 		{Item: int32(99), Weight: 11},
@@ -4892,7 +4896,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 283},
 	}
 
-	m[Pair{105, 110}] = []wr.Choice{
+	m[fb.Pair{105, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 4243},
 		{Item: int32(98), Weight: 131},
 		{Item: int32(99), Weight: 2048},
@@ -4922,7 +4926,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3507},
 	}
 
-	m[Pair{105, 111}] = []wr.Choice{
+	m[fb.Pair{105, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 71},
 		{Item: int32(98), Weight: 106},
 		{Item: int32(99), Weight: 386},
@@ -4952,7 +4956,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 266},
 	}
 
-	m[Pair{105, 112}] = []wr.Choice{
+	m[fb.Pair{105, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 612},
 		{Item: int32(98), Weight: 27},
 		{Item: int32(99), Weight: 27},
@@ -4979,7 +4983,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1273},
 	}
 
-	m[Pair{105, 113}] = []wr.Choice{
+	m[fb.Pair{105, 113}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(114), Weight: 1},
@@ -4988,7 +4992,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{105, 114}] = []wr.Choice{
+	m[fb.Pair{105, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 717},
 		{Item: int32(98), Weight: 53},
 		{Item: int32(99), Weight: 580},
@@ -5017,7 +5021,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 292},
 	}
 
-	m[Pair{105, 115}] = []wr.Choice{
+	m[fb.Pair{105, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 1364},
 		{Item: int32(98), Weight: 198},
 		{Item: int32(99), Weight: 1699},
@@ -5046,7 +5050,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4665},
 	}
 
-	m[Pair{105, 116}] = []wr.Choice{
+	m[fb.Pair{105, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 2505},
 		{Item: int32(98), Weight: 28},
 		{Item: int32(99), Weight: 403},
@@ -5074,7 +5078,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 870},
 	}
 
-	m[Pair{105, 117}] = []wr.Choice{
+	m[fb.Pair{105, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 4},
@@ -5096,7 +5100,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{105, 118}] = []wr.Choice{
+	m[fb.Pair{105, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 857},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 5850},
@@ -5115,7 +5119,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 29},
 	}
 
-	m[Pair{105, 119}] = []wr.Choice{
+	m[fb.Pair{105, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 51},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 21},
@@ -5129,7 +5133,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{105, 120}] = []wr.Choice{
+	m[fb.Pair{105, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 66},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -5151,7 +5155,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 263},
 	}
 
-	m[Pair{105, 121}] = []wr.Choice{
+	m[fb.Pair{105, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 54},
 		{Item: int32(101), Weight: 19},
 		{Item: int32(105), Weight: 3},
@@ -5161,7 +5165,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{105, 122}] = []wr.Choice{
+	m[fb.Pair{105, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 1612},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 6},
@@ -5186,7 +5190,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 25},
 	}
 
-	m[Pair{106, 97}] = []wr.Choice{
+	m[fb.Pair{106, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(98), Weight: 39},
 		{Item: int32(99), Weight: 343},
@@ -5215,25 +5219,25 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 61},
 	}
 
-	m[Pair{106, 98}] = []wr.Choice{
+	m[fb.Pair{106, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{106, 99}] = []wr.Choice{
+	m[fb.Pair{106, 99}] = []wr.Choice{
 		{Item: int32(108), Weight: 1},
 		{Item: int32(116), Weight: 2},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{106, 100}] = []wr.Choice{
+	m[fb.Pair{106, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(115), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{106, 101}] = []wr.Choice{
+	m[fb.Pair{106, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 32},
 		{Item: int32(98), Weight: 11},
 		{Item: int32(99), Weight: 384},
@@ -5262,12 +5266,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 22},
 	}
 
-	m[Pair{106, 103}] = []wr.Choice{
+	m[fb.Pair{106, 103}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{106, 104}] = []wr.Choice{
+	m[fb.Pair{106, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(111), Weight: 3},
@@ -5275,7 +5279,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(118), Weight: 1},
 	}
 
-	m[Pair{106, 105}] = []wr.Choice{
+	m[fb.Pair{106, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 38},
 		{Item: int32(99), Weight: 13},
@@ -5300,31 +5304,31 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 30},
 	}
 
-	m[Pair{106, 106}] = []wr.Choice{
+	m[fb.Pair{106, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 2},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{106, 107}] = []wr.Choice{
+	m[fb.Pair{106, 107}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 		{Item: int32(115), Weight: 2},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{106, 108}] = []wr.Choice{
+	m[fb.Pair{106, 108}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 		{Item: int32(107), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{106, 109}] = []wr.Choice{
+	m[fb.Pair{106, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(115), Weight: 1},
 	}
 
-	m[Pair{106, 110}] = []wr.Choice{
+	m[fb.Pair{106, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(103), Weight: 1},
@@ -5333,7 +5337,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(116), Weight: 1},
 	}
 
-	m[Pair{106, 111}] = []wr.Choice{
+	m[fb.Pair{106, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 47},
 		{Item: int32(99), Weight: 75},
@@ -5361,29 +5365,29 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 23},
 	}
 
-	m[Pair{106, 112}] = []wr.Choice{
+	m[fb.Pair{106, 112}] = []wr.Choice{
 		{Item: int32(111), Weight: 1},
 		{Item: int32(117), Weight: 2},
 	}
 
-	m[Pair{106, 114}] = []wr.Choice{
+	m[fb.Pair{106, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{106, 115}] = []wr.Choice{
+	m[fb.Pair{106, 115}] = []wr.Choice{
 		{Item: int32(99), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{106, 116}] = []wr.Choice{
+	m[fb.Pair{106, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{106, 117}] = []wr.Choice{
+	m[fb.Pair{106, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 47},
 		{Item: int32(99), Weight: 8},
@@ -5410,23 +5414,23 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{106, 118}] = []wr.Choice{
+	m[fb.Pair{106, 118}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 	}
 
-	m[Pair{106, 119}] = []wr.Choice{
+	m[fb.Pair{106, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(111), Weight: 1},
 	}
 
-	m[Pair{106, 121}] = []wr.Choice{
+	m[fb.Pair{106, 121}] = []wr.Choice{
 		{Item: int32(108), Weight: 1},
 		{Item: int32(109), Weight: 1},
 		{Item: int32(110), Weight: 3},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{107, 97}] = []wr.Choice{
+	m[fb.Pair{107, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(98), Weight: 239},
 		{Item: int32(99), Weight: 14},
@@ -5455,7 +5459,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 250},
 	}
 
-	m[Pair{107, 98}] = []wr.Choice{
+	m[fb.Pair{107, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 42},
 		{Item: int32(101), Weight: 39},
 		{Item: int32(105), Weight: 45},
@@ -5468,7 +5472,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{107, 99}] = []wr.Choice{
+	m[fb.Pair{107, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 15},
 		{Item: int32(104), Weight: 12},
 		{Item: int32(105), Weight: 2},
@@ -5480,7 +5484,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{107, 100}] = []wr.Choice{
+	m[fb.Pair{107, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(105), Weight: 4},
@@ -5488,7 +5492,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(114), Weight: 9},
 	}
 
-	m[Pair{107, 101}] = []wr.Choice{
+	m[fb.Pair{107, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 63},
 		{Item: int32(98), Weight: 62},
 		{Item: int32(99), Weight: 18},
@@ -5516,7 +5520,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2061},
 	}
 
-	m[Pair{107, 102}] = []wr.Choice{
+	m[fb.Pair{107, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 22},
 		{Item: int32(101), Weight: 7},
 		{Item: int32(105), Weight: 59},
@@ -5527,7 +5531,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{107, 103}] = []wr.Choice{
+	m[fb.Pair{107, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 2},
@@ -5540,7 +5544,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{107, 104}] = []wr.Choice{
+	m[fb.Pair{107, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 157},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 82},
@@ -5561,7 +5565,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{107, 105}] = []wr.Choice{
+	m[fb.Pair{107, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 118},
 		{Item: int32(98), Weight: 41},
 		{Item: int32(99), Weight: 64},
@@ -5588,14 +5592,14 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 120},
 	}
 
-	m[Pair{107, 106}] = []wr.Choice{
+	m[fb.Pair{107, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 13},
 		{Item: int32(101), Weight: 5},
 		{Item: int32(111), Weight: 4},
 		{Item: int32(117), Weight: 3},
 	}
 
-	m[Pair{107, 107}] = []wr.Choice{
+	m[fb.Pair{107, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 34},
 		{Item: int32(101), Weight: 42},
 		{Item: int32(104), Weight: 1},
@@ -5608,7 +5612,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{107, 108}] = []wr.Choice{
+	m[fb.Pair{107, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 86},
 		{Item: int32(101), Weight: 636},
 		{Item: int32(105), Weight: 286},
@@ -5621,7 +5625,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{107, 109}] = []wr.Choice{
+	m[fb.Pair{107, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 154},
 		{Item: int32(101), Weight: 45},
 		{Item: int32(105), Weight: 10},
@@ -5631,7 +5635,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{107, 110}] = []wr.Choice{
+	m[fb.Pair{107, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 100},
 		{Item: int32(101), Weight: 191},
 		{Item: int32(103), Weight: 1},
@@ -5642,7 +5646,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{107, 111}] = []wr.Choice{
+	m[fb.Pair{107, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(98), Weight: 18},
 		{Item: int32(99), Weight: 21},
@@ -5671,7 +5675,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 69},
 	}
 
-	m[Pair{107, 112}] = []wr.Choice{
+	m[fb.Pair{107, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 14},
@@ -5684,11 +5688,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 4},
 	}
 
-	m[Pair{107, 113}] = []wr.Choice{
+	m[fb.Pair{107, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{107, 114}] = []wr.Choice{
+	m[fb.Pair{107, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 115},
 		{Item: int32(101), Weight: 54},
 		{Item: int32(105), Weight: 61},
@@ -5703,7 +5707,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{107, 115}] = []wr.Choice{
+	m[fb.Pair{107, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 25},
@@ -5728,7 +5732,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1175},
 	}
 
-	m[Pair{107, 116}] = []wr.Choice{
+	m[fb.Pair{107, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 47},
 		{Item: int32(101), Weight: 19},
 		{Item: int32(103), Weight: 1},
@@ -5745,7 +5749,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 18},
 	}
 
-	m[Pair{107, 117}] = []wr.Choice{
+	m[fb.Pair{107, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 15},
 		{Item: int32(98), Weight: 8},
 		{Item: int32(99), Weight: 7},
@@ -5771,7 +5775,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 38},
 	}
 
-	m[Pair{107, 118}] = []wr.Choice{
+	m[fb.Pair{107, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 14},
 		{Item: int32(101), Weight: 8},
 		{Item: int32(105), Weight: 4},
@@ -5780,7 +5784,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{107, 119}] = []wr.Choice{
+	m[fb.Pair{107, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 99},
 		{Item: int32(101), Weight: 42},
 		{Item: int32(104), Weight: 7},
@@ -5792,11 +5796,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{107, 120}] = []wr.Choice{
+	m[fb.Pair{107, 120}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{107, 121}] = []wr.Choice{
+	m[fb.Pair{107, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 52},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 4},
@@ -5820,11 +5824,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 350},
 	}
 
-	m[Pair{107, 122}] = []wr.Choice{
+	m[fb.Pair{107, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 	}
 
-	m[Pair{108, 97}] = []wr.Choice{
+	m[fb.Pair{108, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 18},
 		{Item: int32(98), Weight: 1171},
 		{Item: int32(99), Weight: 1749},
@@ -5854,7 +5858,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1372},
 	}
 
-	m[Pair{108, 98}] = []wr.Choice{
+	m[fb.Pair{108, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 119},
 		{Item: int32(101), Weight: 133},
 		{Item: int32(102), Weight: 1},
@@ -5869,7 +5873,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{108, 99}] = []wr.Choice{
+	m[fb.Pair{108, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 295},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 92},
@@ -5889,7 +5893,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{108, 100}] = []wr.Choice{
+	m[fb.Pair{108, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 132},
 		{Item: int32(98), Weight: 38},
 		{Item: int32(99), Weight: 13},
@@ -5916,7 +5920,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 459},
 	}
 
-	m[Pair{108, 101}] = []wr.Choice{
+	m[fb.Pair{108, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 1440},
 		{Item: int32(98), Weight: 409},
 		{Item: int32(99), Weight: 1683},
@@ -5946,7 +5950,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9381},
 	}
 
-	m[Pair{108, 102}] = []wr.Choice{
+	m[fb.Pair{108, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 129},
 		{Item: int32(98), Weight: 10},
 		{Item: int32(99), Weight: 7},
@@ -5971,7 +5975,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 64},
 	}
 
-	m[Pair{108, 103}] = []wr.Choice{
+	m[fb.Pair{108, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 176},
 		{Item: int32(101), Weight: 214},
 		{Item: int32(104), Weight: 10},
@@ -5986,7 +5990,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{108, 104}] = []wr.Choice{
+	m[fb.Pair{108, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 65},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -5998,7 +6002,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{108, 105}] = []wr.Choice{
+	m[fb.Pair{108, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 1932},
 		{Item: int32(98), Weight: 530},
 		{Item: int32(99), Weight: 2918},
@@ -6028,7 +6032,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 441},
 	}
 
-	m[Pair{108, 106}] = []wr.Choice{
+	m[fb.Pair{108, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 1},
@@ -6036,7 +6040,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 2},
 	}
 
-	m[Pair{108, 107}] = []wr.Choice{
+	m[fb.Pair{108, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 173},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 2},
@@ -6063,7 +6067,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 149},
 	}
 
-	m[Pair{108, 108}] = []wr.Choice{
+	m[fb.Pair{108, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 2678},
 		{Item: int32(98), Weight: 115},
 		{Item: int32(99), Weight: 29},
@@ -6091,7 +6095,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1045},
 	}
 
-	m[Pair{108, 109}] = []wr.Choice{
+	m[fb.Pair{108, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 309},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 4},
@@ -6113,7 +6117,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 73},
 	}
 
-	m[Pair{108, 110}] = []wr.Choice{
+	m[fb.Pair{108, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 2},
@@ -6131,7 +6135,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{108, 111}] = []wr.Choice{
+	m[fb.Pair{108, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 372},
 		{Item: int32(98), Weight: 531},
 		{Item: int32(99), Weight: 1246},
@@ -6161,7 +6165,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 280},
 	}
 
-	m[Pair{108, 112}] = []wr.Choice{
+	m[fb.Pair{108, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 153},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 102},
@@ -6181,13 +6185,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 50},
 	}
 
-	m[Pair{108, 113}] = []wr.Choice{
+	m[fb.Pair{108, 113}] = []wr.Choice{
 		{Item: int32(103), Weight: 1},
 		{Item: int32(110), Weight: 1},
 		{Item: int32(117), Weight: 17},
 	}
 
-	m[Pair{108, 114}] = []wr.Choice{
+	m[fb.Pair{108, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(101), Weight: 11},
 		{Item: int32(105), Weight: 26},
@@ -6197,7 +6201,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{108, 115}] = []wr.Choice{
+	m[fb.Pair{108, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 107},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 7},
@@ -6222,7 +6226,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2002},
 	}
 
-	m[Pair{108, 116}] = []wr.Choice{
+	m[fb.Pair{108, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 270},
 		{Item: int32(98), Weight: 9},
 		{Item: int32(99), Weight: 12},
@@ -6249,7 +6253,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 346},
 	}
 
-	m[Pair{108, 117}] = []wr.Choice{
+	m[fb.Pair{108, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 89},
 		{Item: int32(98), Weight: 266},
 		{Item: int32(99), Weight: 470},
@@ -6278,7 +6282,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 38},
 	}
 
-	m[Pair{108, 118}] = []wr.Choice{
+	m[fb.Pair{108, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 288},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 522},
@@ -6291,7 +6295,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{108, 119}] = []wr.Choice{
+	m[fb.Pair{108, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 92},
 		{Item: int32(101), Weight: 34},
 		{Item: int32(104), Weight: 10},
@@ -6305,14 +6309,14 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{108, 120}] = []wr.Choice{
+	m[fb.Pair{108, 120}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(120), Weight: 1},
 		{Item: int32(121), Weight: 1},
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{108, 121}] = []wr.Choice{
+	m[fb.Pair{108, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 131},
 		{Item: int32(98), Weight: 94},
 		{Item: int32(99), Weight: 440},
@@ -6339,7 +6343,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16689},
 	}
 
-	m[Pair{108, 122}] = []wr.Choice{
+	m[fb.Pair{108, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 14},
@@ -6351,7 +6355,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{109, 97}] = []wr.Choice{
+	m[fb.Pair{109, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(98), Weight: 250},
 		{Item: int32(99), Weight: 1057},
@@ -6381,7 +6385,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1201},
 	}
 
-	m[Pair{109, 98}] = []wr.Choice{
+	m[fb.Pair{109, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 568},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 2},
@@ -6405,7 +6409,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 109},
 	}
 
-	m[Pair{109, 99}] = []wr.Choice{
+	m[fb.Pair{109, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -6425,7 +6429,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{109, 100}] = []wr.Choice{
+	m[fb.Pair{109, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(101), Weight: 14},
 		{Item: int32(103), Weight: 2},
@@ -6441,7 +6445,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{109, 101}] = []wr.Choice{
+	m[fb.Pair{109, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 459},
 		{Item: int32(98), Weight: 62},
 		{Item: int32(99), Weight: 257},
@@ -6471,7 +6475,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1445},
 	}
 
-	m[Pair{109, 102}] = []wr.Choice{
+	m[fb.Pair{109, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 25},
@@ -6486,7 +6490,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{109, 103}] = []wr.Choice{
+	m[fb.Pair{109, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 7},
@@ -6500,7 +6504,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{109, 104}] = []wr.Choice{
+	m[fb.Pair{109, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(101), Weight: 11},
 		{Item: int32(103), Weight: 1},
@@ -6514,7 +6518,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{109, 105}] = []wr.Choice{
+	m[fb.Pair{109, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 1043},
 		{Item: int32(98), Weight: 74},
 		{Item: int32(99), Weight: 2954},
@@ -6544,7 +6548,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 137},
 	}
 
-	m[Pair{109, 106}] = []wr.Choice{
+	m[fb.Pair{109, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(108), Weight: 1},
@@ -6552,7 +6556,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 3},
 	}
 
-	m[Pair{109, 107}] = []wr.Choice{
+	m[fb.Pair{109, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(104), Weight: 3},
@@ -6566,7 +6570,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{109, 108}] = []wr.Choice{
+	m[fb.Pair{109, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 32},
 		{Item: int32(101), Weight: 145},
 		{Item: int32(105), Weight: 111},
@@ -6577,7 +6581,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{109, 109}] = []wr.Choice{
+	m[fb.Pair{109, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 676},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -6598,7 +6602,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 15},
 	}
 
-	m[Pair{109, 110}] = []wr.Choice{
+	m[fb.Pair{109, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 153},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 1},
@@ -6617,7 +6621,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 43},
 	}
 
-	m[Pair{109, 111}] = []wr.Choice{
+	m[fb.Pair{109, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 64},
 		{Item: int32(98), Weight: 199},
 		{Item: int32(99), Weight: 386},
@@ -6647,7 +6651,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 122},
 	}
 
-	m[Pair{109, 112}] = []wr.Choice{
+	m[fb.Pair{109, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 855},
 		{Item: int32(98), Weight: 17},
 		{Item: int32(99), Weight: 5},
@@ -6674,11 +6678,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 192},
 	}
 
-	m[Pair{109, 113}] = []wr.Choice{
+	m[fb.Pair{109, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 6},
 	}
 
-	m[Pair{109, 114}] = []wr.Choice{
+	m[fb.Pair{109, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 24},
 		{Item: int32(101), Weight: 13},
 		{Item: int32(103), Weight: 1},
@@ -6693,7 +6697,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{109, 115}] = []wr.Choice{
+	m[fb.Pair{109, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 35},
@@ -6717,7 +6721,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1380},
 	}
 
-	m[Pair{109, 116}] = []wr.Choice{
+	m[fb.Pair{109, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 12},
@@ -6736,7 +6740,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{109, 117}] = []wr.Choice{
+	m[fb.Pair{109, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 212},
@@ -6765,7 +6769,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 21},
 	}
 
-	m[Pair{109, 118}] = []wr.Choice{
+	m[fb.Pair{109, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(101), Weight: 18},
 		{Item: int32(105), Weight: 41},
@@ -6773,7 +6777,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{109, 119}] = []wr.Choice{
+	m[fb.Pair{109, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 22},
 		{Item: int32(101), Weight: 13},
 		{Item: int32(104), Weight: 4},
@@ -6782,11 +6786,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{109, 120}] = []wr.Choice{
+	m[fb.Pair{109, 120}] = []wr.Choice{
 		{Item: int32(100), Weight: 1},
 	}
 
-	m[Pair{109, 121}] = []wr.Choice{
+	m[fb.Pair{109, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 57},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 294},
@@ -6810,7 +6814,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1058},
 	}
 
-	m[Pair{109, 122}] = []wr.Choice{
+	m[fb.Pair{109, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 6},
 		{Item: int32(105), Weight: 2},
@@ -6819,7 +6823,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{110, 97}] = []wr.Choice{
+	m[fb.Pair{110, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 13},
 		{Item: int32(98), Weight: 1050},
 		{Item: int32(99), Weight: 1036},
@@ -6849,7 +6853,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1099},
 	}
 
-	m[Pair{110, 98}] = []wr.Choice{
+	m[fb.Pair{110, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 212},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -6864,7 +6868,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{110, 99}] = []wr.Choice{
+	m[fb.Pair{110, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 758},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 3565},
@@ -6885,7 +6889,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 29},
 	}
 
-	m[Pair{110, 100}] = []wr.Choice{
+	m[fb.Pair{110, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 1237},
 		{Item: int32(98), Weight: 104},
 		{Item: int32(99), Weight: 38},
@@ -6914,7 +6918,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1296},
 	}
 
-	m[Pair{110, 101}] = []wr.Choice{
+	m[fb.Pair{110, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 715},
 		{Item: int32(98), Weight: 204},
 		{Item: int32(99), Weight: 661},
@@ -6944,7 +6948,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5697},
 	}
 
-	m[Pair{110, 102}] = []wr.Choice{
+	m[fb.Pair{110, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 413},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 600},
@@ -6958,7 +6962,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{110, 103}] = []wr.Choice{
+	m[fb.Pair{110, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 635},
 		{Item: int32(98), Weight: 88},
 		{Item: int32(99), Weight: 16},
@@ -6984,7 +6988,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 18673},
 	}
 
-	m[Pair{110, 104}] = []wr.Choice{
+	m[fb.Pair{110, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 400},
 		{Item: int32(101), Weight: 367},
 		{Item: int32(105), Weight: 121},
@@ -6997,7 +7001,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{110, 105}] = []wr.Choice{
+	m[fb.Pair{110, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 2357},
 		{Item: int32(98), Weight: 124},
 		{Item: int32(99), Weight: 3380},
@@ -7027,7 +7031,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 291},
 	}
 
-	m[Pair{110, 106}] = []wr.Choice{
+	m[fb.Pair{110, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 76},
 		{Item: int32(101), Weight: 87},
 		{Item: int32(105), Weight: 15},
@@ -7038,7 +7042,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{110, 107}] = []wr.Choice{
+	m[fb.Pair{110, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 127},
 		{Item: int32(98), Weight: 27},
 		{Item: int32(99), Weight: 6},
@@ -7063,7 +7067,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 305},
 	}
 
-	m[Pair{110, 108}] = []wr.Choice{
+	m[fb.Pair{110, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 245},
 		{Item: int32(101), Weight: 440},
 		{Item: int32(105), Weight: 575},
@@ -7074,7 +7078,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{110, 109}] = []wr.Choice{
+	m[fb.Pair{110, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 439},
 		{Item: int32(101), Weight: 536},
 		{Item: int32(105), Weight: 186},
@@ -7086,7 +7090,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{110, 110}] = []wr.Choice{
+	m[fb.Pair{110, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 622},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 1354},
@@ -7105,7 +7109,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 48},
 	}
 
-	m[Pair{110, 111}] = []wr.Choice{
+	m[fb.Pair{110, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 80},
 		{Item: int32(98), Weight: 454},
 		{Item: int32(99), Weight: 850},
@@ -7135,7 +7139,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 314},
 	}
 
-	m[Pair{110, 112}] = []wr.Choice{
+	m[fb.Pair{110, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 387},
 		{Item: int32(101), Weight: 431},
 		{Item: int32(102), Weight: 3},
@@ -7153,12 +7157,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{110, 113}] = []wr.Choice{
+	m[fb.Pair{110, 113}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 		{Item: int32(117), Weight: 488},
 	}
 
-	m[Pair{110, 114}] = []wr.Choice{
+	m[fb.Pair{110, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 196},
 		{Item: int32(101), Weight: 1268},
 		{Item: int32(103), Weight: 1},
@@ -7172,7 +7176,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{110, 115}] = []wr.Choice{
+	m[fb.Pair{110, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 720},
 		{Item: int32(98), Weight: 10},
 		{Item: int32(99), Weight: 537},
@@ -7200,7 +7204,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4465},
 	}
 
-	m[Pair{110, 116}] = []wr.Choice{
+	m[fb.Pair{110, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 3161},
 		{Item: int32(98), Weight: 12},
 		{Item: int32(99), Weight: 15},
@@ -7228,7 +7232,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5742},
 	}
 
-	m[Pair{110, 117}] = []wr.Choice{
+	m[fb.Pair{110, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 196},
 		{Item: int32(98), Weight: 100},
 		{Item: int32(99), Weight: 289},
@@ -7255,7 +7259,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 34},
 	}
 
-	m[Pair{110, 118}] = []wr.Choice{
+	m[fb.Pair{110, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 271},
 		{Item: int32(101), Weight: 758},
 		{Item: int32(105), Weight: 477},
@@ -7267,7 +7271,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{110, 119}] = []wr.Choice{
+	m[fb.Pair{110, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 263},
 		{Item: int32(101), Weight: 145},
 		{Item: int32(104), Weight: 47},
@@ -7278,7 +7282,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{110, 120}] = []wr.Choice{
+	m[fb.Pair{110, 120}] = []wr.Choice{
 		{Item: int32(101), Weight: 22},
 		{Item: int32(105), Weight: 28},
 		{Item: int32(108), Weight: 2},
@@ -7290,7 +7294,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 49},
 	}
 
-	m[Pair{110, 121}] = []wr.Choice{
+	m[fb.Pair{110, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 76},
 		{Item: int32(98), Weight: 17},
 		{Item: int32(99), Weight: 123},
@@ -7317,7 +7321,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 768},
 	}
 
-	m[Pair{110, 122}] = []wr.Choice{
+	m[fb.Pair{110, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 94},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 5},
@@ -7334,7 +7338,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{111, 97}] = []wr.Choice{
+	m[fb.Pair{111, 97}] = []wr.Choice{
 		{Item: int32(98), Weight: 37},
 		{Item: int32(99), Weight: 366},
 		{Item: int32(100), Weight: 460},
@@ -7362,7 +7366,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 135},
 	}
 
-	m[Pair{111, 98}] = []wr.Choice{
+	m[fb.Pair{111, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 644},
 		{Item: int32(98), Weight: 315},
 		{Item: int32(99), Weight: 18},
@@ -7390,7 +7394,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 91},
 	}
 
-	m[Pair{111, 99}] = []wr.Choice{
+	m[fb.Pair{111, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 1460},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 564},
@@ -7413,7 +7417,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 67},
 	}
 
-	m[Pair{111, 100}] = []wr.Choice{
+	m[fb.Pair{111, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 547},
 		{Item: int32(98), Weight: 30},
 		{Item: int32(99), Weight: 34},
@@ -7440,7 +7444,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 987},
 	}
 
-	m[Pair{111, 101}] = []wr.Choice{
+	m[fb.Pair{111, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 95},
 		{Item: int32(98), Weight: 83},
 		{Item: int32(99), Weight: 203},
@@ -7469,7 +7473,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 118},
 	}
 
-	m[Pair{111, 102}] = []wr.Choice{
+	m[fb.Pair{111, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 120},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(100), Weight: 1},
@@ -7491,7 +7495,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 445},
 	}
 
-	m[Pair{111, 103}] = []wr.Choice{
+	m[fb.Pair{111, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 692},
 		{Item: int32(98), Weight: 30},
 		{Item: int32(99), Weight: 10},
@@ -7517,7 +7521,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 184},
 	}
 
-	m[Pair{111, 104}] = []wr.Choice{
+	m[fb.Pair{111, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 104},
 		{Item: int32(101), Weight: 308},
 		{Item: int32(105), Weight: 118},
@@ -7537,7 +7541,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 21},
 	}
 
-	m[Pair{111, 105}] = []wr.Choice{
+	m[fb.Pair{111, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 39},
 		{Item: int32(98), Weight: 8},
 		{Item: int32(99), Weight: 337},
@@ -7563,7 +7567,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 124},
 	}
 
-	m[Pair{111, 106}] = []wr.Choice{
+	m[fb.Pair{111, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 60},
@@ -7574,7 +7578,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 19},
 	}
 
-	m[Pair{111, 107}] = []wr.Choice{
+	m[fb.Pair{111, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 135},
 		{Item: int32(98), Weight: 13},
 		{Item: int32(99), Weight: 4},
@@ -7600,7 +7604,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 254},
 	}
 
-	m[Pair{111, 108}] = []wr.Choice{
+	m[fb.Pair{111, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 1623},
 		{Item: int32(98), Weight: 32},
 		{Item: int32(99), Weight: 83},
@@ -7630,7 +7634,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 785},
 	}
 
-	m[Pair{111, 109}] = []wr.Choice{
+	m[fb.Pair{111, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 3245},
 		{Item: int32(98), Weight: 675},
 		{Item: int32(99), Weight: 13},
@@ -7658,7 +7662,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 752},
 	}
 
-	m[Pair{111, 110}] = []wr.Choice{
+	m[fb.Pair{111, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 4447},
 		{Item: int32(98), Weight: 204},
 		{Item: int32(99), Weight: 2009},
@@ -7688,7 +7692,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11090},
 	}
 
-	m[Pair{111, 111}] = []wr.Choice{
+	m[fb.Pair{111, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 40},
 		{Item: int32(99), Weight: 79},
@@ -7717,7 +7721,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 187},
 	}
 
-	m[Pair{111, 112}] = []wr.Choice{
+	m[fb.Pair{111, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 1107},
 		{Item: int32(98), Weight: 21},
 		{Item: int32(99), Weight: 18},
@@ -7744,12 +7748,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 358},
 	}
 
-	m[Pair{111, 113}] = []wr.Choice{
+	m[fb.Pair{111, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 326},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{111, 114}] = []wr.Choice{
+	m[fb.Pair{111, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 2501},
 		{Item: int32(98), Weight: 469},
 		{Item: int32(99), Weight: 563},
@@ -7778,7 +7782,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2271},
 	}
 
-	m[Pair{111, 115}] = []wr.Choice{
+	m[fb.Pair{111, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 719},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 1093},
@@ -7804,7 +7808,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1413},
 	}
 
-	m[Pair{111, 116}] = []wr.Choice{
+	m[fb.Pair{111, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 1057},
 		{Item: int32(98), Weight: 50},
 		{Item: int32(99), Weight: 144},
@@ -7833,7 +7837,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 866},
 	}
 
-	m[Pair{111, 117}] = []wr.Choice{
+	m[fb.Pair{111, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 52},
 		{Item: int32(98), Weight: 197},
 		{Item: int32(99), Weight: 316},
@@ -7863,7 +7867,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 97},
 	}
 
-	m[Pair{111, 118}] = []wr.Choice{
+	m[fb.Pair{111, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 442},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 5151},
@@ -7882,7 +7886,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17},
 	}
 
-	m[Pair{111, 119}] = []wr.Choice{
+	m[fb.Pair{111, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 217},
 		{Item: int32(98), Weight: 144},
 		{Item: int32(99), Weight: 41},
@@ -7911,7 +7915,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 503},
 	}
 
-	m[Pair{111, 120}] = []wr.Choice{
+	m[fb.Pair{111, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 198},
 		{Item: int32(98), Weight: 25},
 		{Item: int32(99), Weight: 21},
@@ -7937,7 +7941,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 151},
 	}
 
-	m[Pair{111, 121}] = []wr.Choice{
+	m[fb.Pair{111, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 234},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 16},
@@ -7960,7 +7964,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 211},
 	}
 
-	m[Pair{111, 122}] = []wr.Choice{
+	m[fb.Pair{111, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 152},
@@ -7976,7 +7980,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{112, 97}] = []wr.Choice{
+	m[fb.Pair{112, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 183},
 		{Item: int32(99), Weight: 690},
@@ -8006,7 +8010,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 161},
 	}
 
-	m[Pair{112, 98}] = []wr.Choice{
+	m[fb.Pair{112, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 26},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 33},
@@ -8021,7 +8025,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{112, 99}] = []wr.Choice{
+	m[fb.Pair{112, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 32},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 2},
@@ -8038,7 +8042,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{112, 100}] = []wr.Choice{
+	m[fb.Pair{112, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 29},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(105), Weight: 9},
@@ -8051,7 +8055,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9},
 	}
 
-	m[Pair{112, 101}] = []wr.Choice{
+	m[fb.Pair{112, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 604},
 		{Item: int32(98), Weight: 33},
 		{Item: int32(99), Weight: 1025},
@@ -8081,7 +8085,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 935},
 	}
 
-	m[Pair{112, 102}] = []wr.Choice{
+	m[fb.Pair{112, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -8098,7 +8102,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{112, 103}] = []wr.Choice{
+	m[fb.Pair{112, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 14},
@@ -8110,7 +8114,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{112, 104}] = []wr.Choice{
+	m[fb.Pair{112, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 2876},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 1661},
@@ -8132,7 +8136,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 644},
 	}
 
-	m[Pair{112, 105}] = []wr.Choice{
+	m[fb.Pair{112, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 451},
 		{Item: int32(98), Weight: 35},
 		{Item: int32(99), Weight: 1516},
@@ -8161,13 +8165,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 77},
 	}
 
-	m[Pair{112, 106}] = []wr.Choice{
+	m[fb.Pair{112, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(101), Weight: 6},
 		{Item: int32(111), Weight: 2},
 	}
 
-	m[Pair{112, 107}] = []wr.Choice{
+	m[fb.Pair{112, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 15},
 		{Item: int32(103), Weight: 2},
@@ -8179,7 +8183,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{112, 108}] = []wr.Choice{
+	m[fb.Pair{112, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 2725},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 1991},
@@ -8193,7 +8197,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 14},
 	}
 
-	m[Pair{112, 109}] = []wr.Choice{
+	m[fb.Pair{112, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 85},
 		{Item: int32(101), Weight: 83},
 		{Item: int32(105), Weight: 10},
@@ -8205,7 +8209,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{112, 110}] = []wr.Choice{
+	m[fb.Pair{112, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 341},
@@ -8217,7 +8221,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{112, 111}] = []wr.Choice{
+	m[fb.Pair{112, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 44},
 		{Item: int32(98), Weight: 45},
 		{Item: int32(99), Weight: 359},
@@ -8247,7 +8251,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 56},
 	}
 
-	m[Pair{112, 112}] = []wr.Choice{
+	m[fb.Pair{112, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 238},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 2},
@@ -8267,12 +8271,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17},
 	}
 
-	m[Pair{112, 113}] = []wr.Choice{
+	m[fb.Pair{112, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 3},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{112, 114}] = []wr.Choice{
+	m[fb.Pair{112, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 906},
 		{Item: int32(101), Weight: 6521},
 		{Item: int32(102), Weight: 1},
@@ -8287,7 +8291,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{112, 115}] = []wr.Choice{
+	m[fb.Pair{112, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 157},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 18},
@@ -8311,7 +8315,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 861},
 	}
 
-	m[Pair{112, 116}] = []wr.Choice{
+	m[fb.Pair{112, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 384},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 6},
@@ -8336,7 +8340,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 269},
 	}
 
-	m[Pair{112, 117}] = []wr.Choice{
+	m[fb.Pair{112, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 174},
 		{Item: int32(99), Weight: 71},
@@ -8363,7 +8367,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17},
 	}
 
-	m[Pair{112, 118}] = []wr.Choice{
+	m[fb.Pair{112, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(105), Weight: 2},
 		{Item: int32(111), Weight: 1},
@@ -8372,7 +8376,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{112, 119}] = []wr.Choice{
+	m[fb.Pair{112, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 49},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 29},
@@ -8385,11 +8389,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{112, 120}] = []wr.Choice{
+	m[fb.Pair{112, 120}] = []wr.Choice{
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{112, 121}] = []wr.Choice{
+	m[fb.Pair{112, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 14},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 54},
@@ -8416,11 +8420,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 605},
 	}
 
-	m[Pair{112, 122}] = []wr.Choice{
+	m[fb.Pair{112, 122}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{113, 97}] = []wr.Choice{
+	m[fb.Pair{113, 97}] = []wr.Choice{
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(102), Weight: 1},
@@ -8432,30 +8436,30 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 100}] = []wr.Choice{
+	m[fb.Pair{113, 100}] = []wr.Choice{
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 101}] = []wr.Choice{
+	m[fb.Pair{113, 101}] = []wr.Choice{
 		{Item: int32(100), Weight: 2},
 		{Item: int32(110), Weight: 1},
 		{Item: int32(114), Weight: 2},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 102}] = []wr.Choice{
+	m[fb.Pair{113, 102}] = []wr.Choice{
 		{Item: int32(99), Weight: 1},
 	}
 
-	m[Pair{113, 103}] = []wr.Choice{
+	m[fb.Pair{113, 103}] = []wr.Choice{
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{113, 104}] = []wr.Choice{
+	m[fb.Pair{113, 104}] = []wr.Choice{
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 105}] = []wr.Choice{
+	m[fb.Pair{113, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -8468,37 +8472,37 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 108}] = []wr.Choice{
+	m[fb.Pair{113, 108}] = []wr.Choice{
 		{Item: int32(105), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 109}] = []wr.Choice{
+	m[fb.Pair{113, 109}] = []wr.Choice{
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 110}] = []wr.Choice{
+	m[fb.Pair{113, 110}] = []wr.Choice{
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 111}] = []wr.Choice{
+	m[fb.Pair{113, 111}] = []wr.Choice{
 		{Item: int32(104), Weight: 1},
 		{Item: int32(110), Weight: 1},
 		{Item: int32(112), Weight: 2},
 	}
 
-	m[Pair{113, 112}] = []wr.Choice{
+	m[fb.Pair{113, 112}] = []wr.Choice{
 		{Item: int32(116), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 113}] = []wr.Choice{
+	m[fb.Pair{113, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 1},
 		{Item: int32(118), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 114}] = []wr.Choice{
+	m[fb.Pair{113, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(115), Weight: 2},
@@ -8506,12 +8510,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 115}] = []wr.Choice{
+	m[fb.Pair{113, 115}] = []wr.Choice{
 		{Item: int32(104), Weight: 2},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{113, 116}] = []wr.Choice{
+	m[fb.Pair{113, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(105), Weight: 1},
@@ -8522,7 +8526,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{113, 117}] = []wr.Choice{
+	m[fb.Pair{113, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 1686},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 2},
@@ -8541,20 +8545,20 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{113, 118}] = []wr.Choice{
+	m[fb.Pair{113, 118}] = []wr.Choice{
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{113, 119}] = []wr.Choice{
+	m[fb.Pair{113, 119}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(108), Weight: 1},
 	}
 
-	m[Pair{113, 121}] = []wr.Choice{
+	m[fb.Pair{113, 121}] = []wr.Choice{
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{114, 97}] = []wr.Choice{
+	m[fb.Pair{114, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 33},
 		{Item: int32(98), Weight: 1569},
 		{Item: int32(99), Weight: 3389},
@@ -8584,7 +8588,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1357},
 	}
 
-	m[Pair{114, 98}] = []wr.Choice{
+	m[fb.Pair{114, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 609},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(100), Weight: 1},
@@ -8605,7 +8609,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 74},
 	}
 
-	m[Pair{114, 99}] = []wr.Choice{
+	m[fb.Pair{114, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 488},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 2},
@@ -8629,7 +8633,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 25},
 	}
 
-	m[Pair{114, 100}] = []wr.Choice{
+	m[fb.Pair{114, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 441},
 		{Item: int32(98), Weight: 39},
 		{Item: int32(99), Weight: 23},
@@ -8655,7 +8659,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1300},
 	}
 
-	m[Pair{114, 101}] = []wr.Choice{
+	m[fb.Pair{114, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 3386},
 		{Item: int32(98), Weight: 813},
 		{Item: int32(99), Weight: 3231},
@@ -8685,7 +8689,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2805},
 	}
 
-	m[Pair{114, 102}] = []wr.Choice{
+	m[fb.Pair{114, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 172},
 		{Item: int32(98), Weight: 11},
 		{Item: int32(99), Weight: 4},
@@ -8710,7 +8714,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 48},
 	}
 
-	m[Pair{114, 103}] = []wr.Choice{
+	m[fb.Pair{114, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 629},
 		{Item: int32(101), Weight: 885},
 		{Item: int32(102), Weight: 2},
@@ -8731,7 +8735,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 68},
 	}
 
-	m[Pair{114, 104}] = []wr.Choice{
+	m[fb.Pair{114, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 440},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -8746,7 +8750,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{114, 105}] = []wr.Choice{
+	m[fb.Pair{114, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 4108},
 		{Item: int32(98), Weight: 846},
 		{Item: int32(99), Weight: 4479},
@@ -8776,7 +8780,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 414},
 	}
 
-	m[Pair{114, 106}] = []wr.Choice{
+	m[fb.Pair{114, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 50},
 		{Item: int32(101), Weight: 43},
 		{Item: int32(105), Weight: 5},
@@ -8785,7 +8789,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{114, 107}] = []wr.Choice{
+	m[fb.Pair{114, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 92},
 		{Item: int32(98), Weight: 18},
 		{Item: int32(99), Weight: 2},
@@ -8810,7 +8814,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 537},
 	}
 
-	m[Pair{114, 108}] = []wr.Choice{
+	m[fb.Pair{114, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 330},
 		{Item: int32(98), Weight: 10},
 		{Item: int32(99), Weight: 3},
@@ -8833,7 +8837,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 124},
 	}
 
-	m[Pair{114, 109}] = []wr.Choice{
+	m[fb.Pair{114, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 1724},
 		{Item: int32(98), Weight: 12},
 		{Item: int32(99), Weight: 8},
@@ -8857,7 +8861,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1198},
 	}
 
-	m[Pair{114, 110}] = []wr.Choice{
+	m[fb.Pair{114, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 902},
 		{Item: int32(98), Weight: 44},
 		{Item: int32(99), Weight: 20},
@@ -8883,7 +8887,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 527},
 	}
 
-	m[Pair{114, 111}] = []wr.Choice{
+	m[fb.Pair{114, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 714},
 		{Item: int32(98), Weight: 874},
 		{Item: int32(99), Weight: 2169},
@@ -8913,7 +8917,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 327},
 	}
 
-	m[Pair{114, 112}] = []wr.Choice{
+	m[fb.Pair{114, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 284},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 459},
@@ -8933,11 +8937,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 107},
 	}
 
-	m[Pair{114, 113}] = []wr.Choice{
+	m[fb.Pair{114, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 147},
 	}
 
-	m[Pair{114, 114}] = []wr.Choice{
+	m[fb.Pair{114, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 859},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 1452},
@@ -8959,7 +8963,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 63},
 	}
 
-	m[Pair{114, 115}] = []wr.Choice{
+	m[fb.Pair{114, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 499},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 128},
@@ -8984,7 +8988,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6434},
 	}
 
-	m[Pair{114, 116}] = []wr.Choice{
+	m[fb.Pair{114, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 731},
 		{Item: int32(98), Weight: 30},
 		{Item: int32(99), Weight: 24},
@@ -9012,7 +9016,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 884},
 	}
 
-	m[Pair{114, 117}] = []wr.Choice{
+	m[fb.Pair{114, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 83},
 		{Item: int32(98), Weight: 332},
 		{Item: int32(99), Weight: 611},
@@ -9042,7 +9046,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 59},
 	}
 
-	m[Pair{114, 118}] = []wr.Choice{
+	m[fb.Pair{114, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 436},
 		{Item: int32(101), Weight: 583},
 		{Item: int32(105), Weight: 529},
@@ -9055,7 +9059,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9},
 	}
 
-	m[Pair{114, 119}] = []wr.Choice{
+	m[fb.Pair{114, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 232},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 146},
@@ -9070,13 +9074,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{114, 120}] = []wr.Choice{
+	m[fb.Pair{114, 120}] = []wr.Choice{
 		{Item: int32(105), Weight: 6},
 		{Item: int32(121), Weight: 1},
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{114, 121}] = []wr.Choice{
+	m[fb.Pair{114, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 109},
 		{Item: int32(98), Weight: 42},
 		{Item: int32(99), Weight: 79},
@@ -9103,7 +9107,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4862},
 	}
 
-	m[Pair{114, 122}] = []wr.Choice{
+	m[fb.Pair{114, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 39},
@@ -9116,7 +9120,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9},
 	}
 
-	m[Pair{115, 97}] = []wr.Choice{
+	m[fb.Pair{115, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 697},
 		{Item: int32(99), Weight: 598},
@@ -9146,7 +9150,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 275},
 	}
 
-	m[Pair{115, 98}] = []wr.Choice{
+	m[fb.Pair{115, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 103},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 110},
@@ -9159,7 +9163,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{115, 99}] = []wr.Choice{
+	m[fb.Pair{115, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 1360},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 1187},
@@ -9178,7 +9182,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 29},
 	}
 
-	m[Pair{115, 100}] = []wr.Choice{
+	m[fb.Pair{115, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 43},
 		{Item: int32(101), Weight: 73},
 		{Item: int32(105), Weight: 50},
@@ -9192,7 +9196,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{115, 101}] = []wr.Choice{
+	m[fb.Pair{115, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 570},
 		{Item: int32(98), Weight: 131},
 		{Item: int32(99), Weight: 833},
@@ -9222,7 +9226,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3802},
 	}
 
-	m[Pair{115, 102}] = []wr.Choice{
+	m[fb.Pair{115, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 62},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 72},
@@ -9237,7 +9241,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{115, 103}] = []wr.Choice{
+	m[fb.Pair{115, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 29},
 		{Item: int32(100), Weight: 2},
 		{Item: int32(101), Weight: 22},
@@ -9253,7 +9257,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{115, 104}] = []wr.Choice{
+	m[fb.Pair{115, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 1408},
 		{Item: int32(98), Weight: 74},
 		{Item: int32(99), Weight: 21},
@@ -9281,7 +9285,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2305},
 	}
 
-	m[Pair{115, 105}] = []wr.Choice{
+	m[fb.Pair{115, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 1249},
 		{Item: int32(98), Weight: 695},
 		{Item: int32(99), Weight: 947},
@@ -9311,7 +9315,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 137},
 	}
 
-	m[Pair{115, 106}] = []wr.Choice{
+	m[fb.Pair{115, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(101), Weight: 9},
 		{Item: int32(105), Weight: 4},
@@ -9319,7 +9323,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 27},
 	}
 
-	m[Pair{115, 107}] = []wr.Choice{
+	m[fb.Pair{115, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 143},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 482},
@@ -9342,7 +9346,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 124},
 	}
 
-	m[Pair{115, 108}] = []wr.Choice{
+	m[fb.Pair{115, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 607},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 434},
@@ -9357,7 +9361,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{115, 109}] = []wr.Choice{
+	m[fb.Pair{115, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 974},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 421},
@@ -9375,7 +9379,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4113},
 	}
 
-	m[Pair{115, 110}] = []wr.Choice{
+	m[fb.Pair{115, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 318},
 		{Item: int32(101), Weight: 1648},
 		{Item: int32(105), Weight: 194},
@@ -9387,7 +9391,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{115, 111}] = []wr.Choice{
+	m[fb.Pair{115, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 154},
 		{Item: int32(98), Weight: 155},
 		{Item: int32(99), Weight: 659},
@@ -9417,7 +9421,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 130},
 	}
 
-	m[Pair{115, 112}] = []wr.Choice{
+	m[fb.Pair{115, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 1084},
 		{Item: int32(98), Weight: 5},
 		{Item: int32(99), Weight: 1},
@@ -9438,7 +9442,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 55},
 	}
 
-	m[Pair{115, 113}] = []wr.Choice{
+	m[fb.Pair{115, 113}] = []wr.Choice{
 		{Item: int32(100), Weight: 1},
 		{Item: int32(113), Weight: 1},
 		{Item: int32(114), Weight: 1},
@@ -9446,7 +9450,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{115, 114}] = []wr.Choice{
+	m[fb.Pair{115, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 49},
 		{Item: int32(101), Weight: 121},
 		{Item: int32(104), Weight: 7},
@@ -9458,7 +9462,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{115, 115}] = []wr.Choice{
+	m[fb.Pair{115, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 921},
 		{Item: int32(98), Weight: 61},
 		{Item: int32(99), Weight: 32},
@@ -9486,7 +9490,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12538},
 	}
 
-	m[Pair{115, 116}] = []wr.Choice{
+	m[fb.Pair{115, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 3873},
 		{Item: int32(98), Weight: 60},
 		{Item: int32(99), Weight: 100},
@@ -9515,7 +9519,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6816},
 	}
 
-	m[Pair{115, 117}] = []wr.Choice{
+	m[fb.Pair{115, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 303},
 		{Item: int32(98), Weight: 3068},
 		{Item: int32(99), Weight: 334},
@@ -9545,7 +9549,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 43},
 	}
 
-	m[Pair{115, 118}] = []wr.Choice{
+	m[fb.Pair{115, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 39},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(101), Weight: 62},
@@ -9558,7 +9562,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{115, 119}] = []wr.Choice{
+	m[fb.Pair{115, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 414},
 		{Item: int32(101), Weight: 368},
 		{Item: int32(105), Weight: 333},
@@ -9570,7 +9574,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{115, 121}] = []wr.Choice{
+	m[fb.Pair{115, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(98), Weight: 28},
 		{Item: int32(99), Weight: 509},
@@ -9596,7 +9600,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 394},
 	}
 
-	m[Pair{115, 122}] = []wr.Choice{
+	m[fb.Pair{115, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(105), Weight: 1},
@@ -9608,7 +9612,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{116, 97}] = []wr.Choice{
+	m[fb.Pair{116, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 10},
 		{Item: int32(98), Weight: 2067},
 		{Item: int32(99), Weight: 1030},
@@ -9638,7 +9642,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1263},
 	}
 
-	m[Pair{116, 98}] = []wr.Choice{
+	m[fb.Pair{116, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 124},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -9653,7 +9657,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{116, 99}] = []wr.Choice{
+	m[fb.Pair{116, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 88},
 		{Item: int32(101), Weight: 14},
 		{Item: int32(104), Weight: 1442},
@@ -9668,7 +9672,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{116, 100}] = []wr.Choice{
+	m[fb.Pair{116, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 25},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 13},
@@ -9681,7 +9685,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 16},
 	}
 
-	m[Pair{116, 101}] = []wr.Choice{
+	m[fb.Pair{116, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 790},
 		{Item: int32(98), Weight: 137},
 		{Item: int32(99), Weight: 637},
@@ -9711,7 +9715,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10588},
 	}
 
-	m[Pair{116, 102}] = []wr.Choice{
+	m[fb.Pair{116, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 76},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 30},
@@ -9724,7 +9728,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{116, 103}] = []wr.Choice{
+	m[fb.Pair{116, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 71},
 		{Item: int32(101), Weight: 69},
 		{Item: int32(105), Weight: 7},
@@ -9737,7 +9741,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{116, 104}] = []wr.Choice{
+	m[fb.Pair{116, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 1320},
 		{Item: int32(98), Weight: 52},
 		{Item: int32(99), Weight: 24},
@@ -9764,7 +9768,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1085},
 	}
 
-	m[Pair{116, 105}] = []wr.Choice{
+	m[fb.Pair{116, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 1727},
 		{Item: int32(98), Weight: 600},
 		{Item: int32(99), Weight: 9888},
@@ -9794,7 +9798,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 315},
 	}
 
-	m[Pair{116, 106}] = []wr.Choice{
+	m[fb.Pair{116, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 22},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 13},
@@ -9803,7 +9807,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 13},
 	}
 
-	m[Pair{116, 107}] = []wr.Choice{
+	m[fb.Pair{116, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 13},
 		{Item: int32(101), Weight: 18},
 		{Item: int32(105), Weight: 26},
@@ -9815,7 +9819,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{116, 108}] = []wr.Choice{
+	m[fb.Pair{116, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 179},
 		{Item: int32(101), Weight: 1436},
 		{Item: int32(103), Weight: 1},
@@ -9830,7 +9834,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 30},
 	}
 
-	m[Pair{116, 109}] = []wr.Choice{
+	m[fb.Pair{116, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 325},
 		{Item: int32(101), Weight: 381},
 		{Item: int32(104), Weight: 2},
@@ -9843,7 +9847,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{116, 110}] = []wr.Choice{
+	m[fb.Pair{116, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 34},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 593},
@@ -9858,7 +9862,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{116, 111}] = []wr.Choice{
+	m[fb.Pair{116, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 178},
 		{Item: int32(98), Weight: 225},
 		{Item: int32(99), Weight: 1075},
@@ -9888,7 +9892,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 456},
 	}
 
-	m[Pair{116, 112}] = []wr.Choice{
+	m[fb.Pair{116, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 60},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 24},
@@ -9907,11 +9911,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{116, 113}] = []wr.Choice{
+	m[fb.Pair{116, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 20},
 	}
 
-	m[Pair{116, 114}] = []wr.Choice{
+	m[fb.Pair{116, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 6324},
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -9930,7 +9934,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 18},
 	}
 
-	m[Pair{116, 115}] = []wr.Choice{
+	m[fb.Pair{116, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 78},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 92},
@@ -9955,7 +9959,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4406},
 	}
 
-	m[Pair{116, 116}] = []wr.Choice{
+	m[fb.Pair{116, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 648},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -9979,7 +9983,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 94},
 	}
 
-	m[Pair{116, 117}] = []wr.Choice{
+	m[fb.Pair{116, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 664},
 		{Item: int32(98), Weight: 451},
 		{Item: int32(99), Weight: 93},
@@ -10008,7 +10012,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 56},
 	}
 
-	m[Pair{116, 118}] = []wr.Choice{
+	m[fb.Pair{116, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(101), Weight: 18},
 		{Item: int32(105), Weight: 13},
@@ -10017,7 +10021,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{116, 119}] = []wr.Choice{
+	m[fb.Pair{116, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 277},
 		{Item: int32(101), Weight: 170},
 		{Item: int32(104), Weight: 14},
@@ -10031,14 +10035,14 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{116, 120}] = []wr.Choice{
+	m[fb.Pair{116, 120}] = []wr.Choice{
 		{Item: int32(105), Weight: 2},
 		{Item: int32(116), Weight: 1},
 		{Item: int32(121), Weight: 1},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{116, 121}] = []wr.Choice{
+	m[fb.Pair{116, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 47},
 		{Item: int32(98), Weight: 13},
 		{Item: int32(99), Weight: 82},
@@ -10064,7 +10068,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5017},
 	}
 
-	m[Pair{116, 122}] = []wr.Choice{
+	m[fb.Pair{116, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 44},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 2},
@@ -10085,7 +10089,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 68},
 	}
 
-	m[Pair{117, 97}] = []wr.Choice{
+	m[fb.Pair{117, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(98), Weight: 120},
 		{Item: int32(99), Weight: 94},
@@ -10115,7 +10119,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 133},
 	}
 
-	m[Pair{117, 98}] = []wr.Choice{
+	m[fb.Pair{117, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 422},
 		{Item: int32(98), Weight: 412},
 		{Item: int32(99), Weight: 345},
@@ -10144,7 +10148,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 83},
 	}
 
-	m[Pair{117, 99}] = []wr.Choice{
+	m[fb.Pair{117, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 307},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 295},
@@ -10166,7 +10170,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17},
 	}
 
-	m[Pair{117, 100}] = []wr.Choice{
+	m[fb.Pair{117, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 349},
 		{Item: int32(98), Weight: 14},
 		{Item: int32(99), Weight: 7},
@@ -10191,7 +10195,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 132},
 	}
 
-	m[Pair{117, 101}] = []wr.Choice{
+	m[fb.Pair{117, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 91},
 		{Item: int32(98), Weight: 70},
 		{Item: int32(99), Weight: 30},
@@ -10219,7 +10223,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 751},
 	}
 
-	m[Pair{117, 102}] = []wr.Choice{
+	m[fb.Pair{117, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 48},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(101), Weight: 25},
@@ -10237,7 +10241,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 17},
 	}
 
-	m[Pair{117, 103}] = []wr.Choice{
+	m[fb.Pair{117, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 298},
 		{Item: int32(98), Weight: 16},
 		{Item: int32(100), Weight: 5},
@@ -10262,7 +10266,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 94},
 	}
 
-	m[Pair{117, 104}] = []wr.Choice{
+	m[fb.Pair{117, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 22},
 		{Item: int32(101), Weight: 16},
 		{Item: int32(105), Weight: 10},
@@ -10278,7 +10282,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 13},
 	}
 
-	m[Pair{117, 105}] = []wr.Choice{
+	m[fb.Pair{117, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 87},
 		{Item: int32(98), Weight: 40},
 		{Item: int32(99), Weight: 160},
@@ -10306,7 +10310,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 54},
 	}
 
-	m[Pair{117, 106}] = []wr.Choice{
+	m[fb.Pair{117, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 24},
 		{Item: int32(100), Weight: 4},
 		{Item: int32(101), Weight: 5},
@@ -10319,7 +10323,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{117, 107}] = []wr.Choice{
+	m[fb.Pair{117, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 49},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 1},
@@ -10339,7 +10343,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 87},
 	}
 
-	m[Pair{117, 108}] = []wr.Choice{
+	m[fb.Pair{117, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 4032},
 		{Item: int32(98), Weight: 80},
 		{Item: int32(99), Weight: 251},
@@ -10368,7 +10372,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1174},
 	}
 
-	m[Pair{117, 109}] = []wr.Choice{
+	m[fb.Pair{117, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 694},
 		{Item: int32(98), Weight: 938},
 		{Item: int32(99), Weight: 33},
@@ -10397,7 +10401,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2930},
 	}
 
-	m[Pair{117, 110}] = []wr.Choice{
+	m[fb.Pair{117, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 1563},
 		{Item: int32(98), Weight: 886},
 		{Item: int32(99), Weight: 3096},
@@ -10427,7 +10431,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 205},
 	}
 
-	m[Pair{117, 111}] = []wr.Choice{
+	m[fb.Pair{117, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 9},
@@ -10453,7 +10457,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{117, 112}] = []wr.Choice{
+	m[fb.Pair{117, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 177},
 		{Item: int32(98), Weight: 84},
 		{Item: int32(99), Weight: 70},
@@ -10481,13 +10485,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 211},
 	}
 
-	m[Pair{117, 113}] = []wr.Choice{
+	m[fb.Pair{117, 113}] = []wr.Choice{
 		{Item: int32(115), Weight: 2},
 		{Item: int32(117), Weight: 38},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{117, 114}] = []wr.Choice{
+	m[fb.Pair{117, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 1996},
 		{Item: int32(98), Weight: 453},
 		{Item: int32(99), Weight: 269},
@@ -10516,7 +10520,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 565},
 	}
 
-	m[Pair{117, 115}] = []wr.Choice{
+	m[fb.Pair{117, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 331},
 		{Item: int32(98), Weight: 33},
 		{Item: int32(99), Weight: 406},
@@ -10545,7 +10549,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10270},
 	}
 
-	m[Pair{117, 116}] = []wr.Choice{
+	m[fb.Pair{117, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 707},
 		{Item: int32(98), Weight: 207},
 		{Item: int32(99), Weight: 257},
@@ -10574,7 +10578,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 530},
 	}
 
-	m[Pair{117, 117}] = []wr.Choice{
+	m[fb.Pair{117, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 1},
@@ -10588,7 +10592,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{117, 118}] = []wr.Choice{
+	m[fb.Pair{117, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 42},
 		{Item: int32(101), Weight: 143},
 		{Item: int32(105), Weight: 200},
@@ -10601,7 +10605,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{117, 119}] = []wr.Choice{
+	m[fb.Pair{117, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 4},
@@ -10612,7 +10616,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 7},
 	}
 
-	m[Pair{117, 120}] = []wr.Choice{
+	m[fb.Pair{117, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 23},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(101), Weight: 61},
@@ -10631,7 +10635,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 115},
 	}
 
-	m[Pair{117, 121}] = []wr.Choice{
+	m[fb.Pair{117, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 19},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(100), Weight: 1},
@@ -10650,7 +10654,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 53},
 	}
 
-	m[Pair{117, 122}] = []wr.Choice{
+	m[fb.Pair{117, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 27},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 1},
@@ -10669,7 +10673,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 13},
 	}
 
-	m[Pair{118, 97}] = []wr.Choice{
+	m[fb.Pair{118, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 12},
 		{Item: int32(98), Weight: 292},
 		{Item: int32(99), Weight: 251},
@@ -10699,18 +10703,18 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 155},
 	}
 
-	m[Pair{118, 98}] = []wr.Choice{
+	m[fb.Pair{118, 98}] = []wr.Choice{
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{118, 99}] = []wr.Choice{
+	m[fb.Pair{118, 99}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(105), Weight: 3},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{118, 100}] = []wr.Choice{
+	m[fb.Pair{118, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(111), Weight: 1},
@@ -10718,7 +10722,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{118, 101}] = []wr.Choice{
+	m[fb.Pair{118, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 122},
 		{Item: int32(98), Weight: 18},
 		{Item: int32(99), Weight: 91},
@@ -10748,18 +10752,18 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3571},
 	}
 
-	m[Pair{118, 103}] = []wr.Choice{
+	m[fb.Pair{118, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(115), Weight: 1},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{118, 104}] = []wr.Choice{
+	m[fb.Pair{118, 104}] = []wr.Choice{
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{118, 105}] = []wr.Choice{
+	m[fb.Pair{118, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 505},
 		{Item: int32(98), Weight: 103},
 		{Item: int32(99), Weight: 587},
@@ -10788,12 +10792,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 44},
 	}
 
-	m[Pair{118, 107}] = []wr.Choice{
+	m[fb.Pair{118, 107}] = []wr.Choice{
 		{Item: int32(104), Weight: 5},
 		{Item: int32(116), Weight: 1},
 	}
 
-	m[Pair{118, 108}] = []wr.Choice{
+	m[fb.Pair{118, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 3},
@@ -10806,19 +10810,19 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{118, 109}] = []wr.Choice{
+	m[fb.Pair{118, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(115), Weight: 1},
 	}
 
-	m[Pair{118, 110}] = []wr.Choice{
+	m[fb.Pair{118, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(105), Weight: 2},
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{118, 111}] = []wr.Choice{
+	m[fb.Pair{118, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 323},
@@ -10846,12 +10850,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 39},
 	}
 
-	m[Pair{118, 112}] = []wr.Choice{
+	m[fb.Pair{118, 112}] = []wr.Choice{
 		{Item: int32(114), Weight: 1},
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{118, 114}] = []wr.Choice{
+	m[fb.Pair{118, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 33},
@@ -10861,7 +10865,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{118, 115}] = []wr.Choice{
+	m[fb.Pair{118, 115}] = []wr.Choice{
 		{Item: int32(98), Weight: 1},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(107), Weight: 7},
@@ -10869,13 +10873,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 15},
 	}
 
-	m[Pair{118, 116}] = []wr.Choice{
+	m[fb.Pair{118, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(115), Weight: 1},
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{118, 117}] = []wr.Choice{
+	m[fb.Pair{118, 117}] = []wr.Choice{
 		{Item: int32(99), Weight: 2},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 8},
@@ -10891,7 +10895,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{118, 118}] = []wr.Choice{
+	m[fb.Pair{118, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 9},
 		{Item: int32(105), Weight: 15},
@@ -10900,12 +10904,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{118, 119}] = []wr.Choice{
+	m[fb.Pair{118, 119}] = []wr.Choice{
 		{Item: int32(115), Weight: 1},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{118, 121}] = []wr.Choice{
+	m[fb.Pair{118, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(101), Weight: 2},
@@ -10922,12 +10926,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 78},
 	}
 
-	m[Pair{118, 122}] = []wr.Choice{
+	m[fb.Pair{118, 122}] = []wr.Choice{
 		{Item: int32(111), Weight: 3},
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{119, 97}] = []wr.Choice{
+	m[fb.Pair{119, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 137},
 		{Item: int32(99), Weight: 49},
@@ -10955,7 +10959,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 70},
 	}
 
-	m[Pair{119, 98}] = []wr.Choice{
+	m[fb.Pair{119, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 55},
 		{Item: int32(101), Weight: 61},
 		{Item: int32(105), Weight: 19},
@@ -10968,7 +10972,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{119, 99}] = []wr.Choice{
+	m[fb.Pair{119, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 24},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(104), Weight: 12},
@@ -10980,7 +10984,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{119, 100}] = []wr.Choice{
+	m[fb.Pair{119, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(101), Weight: 64},
 		{Item: int32(105), Weight: 33},
@@ -10995,7 +10999,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 28},
 	}
 
-	m[Pair{119, 101}] = []wr.Choice{
+	m[fb.Pair{119, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 428},
 		{Item: int32(98), Weight: 60},
 		{Item: int32(99), Weight: 3},
@@ -11022,7 +11026,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 40},
 	}
 
-	m[Pair{119, 102}] = []wr.Choice{
+	m[fb.Pair{119, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 17},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(102), Weight: 2},
@@ -11035,7 +11039,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{119, 103}] = []wr.Choice{
+	m[fb.Pair{119, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 15},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(104), Weight: 4},
@@ -11047,7 +11051,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{119, 104}] = []wr.Choice{
+	m[fb.Pair{119, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 195},
 		{Item: int32(101), Weight: 388},
 		{Item: int32(102), Weight: 1},
@@ -11060,7 +11064,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{119, 105}] = []wr.Choice{
+	m[fb.Pair{119, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 95},
@@ -11085,13 +11089,13 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 23},
 	}
 
-	m[Pair{119, 106}] = []wr.Choice{
+	m[fb.Pair{119, 106}] = []wr.Choice{
 		{Item: int32(99), Weight: 1},
 		{Item: int32(111), Weight: 3},
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{119, 107}] = []wr.Choice{
+	m[fb.Pair{119, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(101), Weight: 32},
@@ -11107,7 +11111,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 47},
 	}
 
-	m[Pair{119, 108}] = []wr.Choice{
+	m[fb.Pair{119, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 31},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(100), Weight: 7},
@@ -11130,7 +11134,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 94},
 	}
 
-	m[Pair{119, 109}] = []wr.Choice{
+	m[fb.Pair{119, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 69},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 38},
@@ -11142,7 +11146,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 9},
 	}
 
-	m[Pair{119, 110}] = []wr.Choice{
+	m[fb.Pair{119, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(98), Weight: 18},
 		{Item: int32(99), Weight: 16},
@@ -11166,7 +11170,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 284},
 	}
 
-	m[Pair{119, 111}] = []wr.Choice{
+	m[fb.Pair{119, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 14},
 		{Item: int32(98), Weight: 28},
 		{Item: int32(99), Weight: 8},
@@ -11192,7 +11196,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{119, 112}] = []wr.Choice{
+	m[fb.Pair{119, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 16},
 		{Item: int32(101), Weight: 14},
 		{Item: int32(104), Weight: 1},
@@ -11207,11 +11211,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{119, 113}] = []wr.Choice{
+	m[fb.Pair{119, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 2},
 	}
 
-	m[Pair{119, 114}] = []wr.Choice{
+	m[fb.Pair{119, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 158},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 143},
@@ -11223,7 +11227,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{119, 115}] = []wr.Choice{
+	m[fb.Pair{119, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 8},
 		{Item: int32(99), Weight: 6},
@@ -11249,7 +11253,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 348},
 	}
 
-	m[Pair{119, 116}] = []wr.Choice{
+	m[fb.Pair{119, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 11},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(101), Weight: 25},
@@ -11264,7 +11268,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 22},
 	}
 
-	m[Pair{119, 117}] = []wr.Choice{
+	m[fb.Pair{119, 117}] = []wr.Choice{
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 5},
 		{Item: int32(102), Weight: 1},
@@ -11280,12 +11284,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{119, 118}] = []wr.Choice{
+	m[fb.Pair{119, 118}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{119, 119}] = []wr.Choice{
+	m[fb.Pair{119, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 10},
 		{Item: int32(104), Weight: 2},
@@ -11294,7 +11298,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(114), Weight: 3},
 	}
 
-	m[Pair{119, 121}] = []wr.Choice{
+	m[fb.Pair{119, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 9},
@@ -11314,14 +11318,14 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 66},
 	}
 
-	m[Pair{119, 122}] = []wr.Choice{
+	m[fb.Pair{119, 122}] = []wr.Choice{
 		{Item: int32(101), Weight: 5},
 		{Item: int32(105), Weight: 10},
 		{Item: int32(108), Weight: 2},
 		{Item: int32(121), Weight: 3},
 	}
 
-	m[Pair{120, 97}] = []wr.Choice{
+	m[fb.Pair{120, 97}] = []wr.Choice{
 		{Item: int32(98), Weight: 43},
 		{Item: int32(99), Weight: 106},
 		{Item: int32(100), Weight: 27},
@@ -11345,7 +11349,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 19},
 	}
 
-	m[Pair{120, 98}] = []wr.Choice{
+	m[fb.Pair{120, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 8},
 		{Item: int32(105), Weight: 6},
@@ -11356,7 +11360,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{120, 99}] = []wr.Choice{
+	m[fb.Pair{120, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 44},
 		{Item: int32(101), Weight: 129},
 		{Item: int32(104), Weight: 34},
@@ -11370,7 +11374,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{120, 100}] = []wr.Choice{
+	m[fb.Pair{120, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(105), Weight: 10},
@@ -11378,7 +11382,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{120, 101}] = []wr.Choice{
+	m[fb.Pair{120, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(98), Weight: 3},
 		{Item: int32(99), Weight: 85},
@@ -11398,7 +11402,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 32},
 	}
 
-	m[Pair{120, 102}] = []wr.Choice{
+	m[fb.Pair{120, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 3},
 		{Item: int32(105), Weight: 12},
@@ -11407,7 +11411,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 3},
 	}
 
-	m[Pair{120, 103}] = []wr.Choice{
+	m[fb.Pair{120, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(108), Weight: 2},
@@ -11416,7 +11420,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 2},
 	}
 
-	m[Pair{120, 104}] = []wr.Choice{
+	m[fb.Pair{120, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 75},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(101), Weight: 12},
@@ -11427,7 +11431,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{120, 105}] = []wr.Choice{
+	m[fb.Pair{120, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 190},
 		{Item: int32(98), Weight: 40},
 		{Item: int32(99), Weight: 252},
@@ -11452,12 +11456,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 11},
 	}
 
-	m[Pair{120, 107}] = []wr.Choice{
+	m[fb.Pair{120, 107}] = []wr.Choice{
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
 	}
 
-	m[Pair{120, 108}] = []wr.Choice{
+	m[fb.Pair{120, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 23},
 		{Item: int32(105), Weight: 15},
@@ -11467,18 +11471,18 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{120, 109}] = []wr.Choice{
+	m[fb.Pair{120, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 21},
 		{Item: int32(101), Weight: 8},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(111), Weight: 3},
 	}
 
-	m[Pair{120, 110}] = []wr.Choice{
+	m[fb.Pair{120, 110}] = []wr.Choice{
 		{Item: int32(101), Weight: 13},
 	}
 
-	m[Pair{120, 111}] = []wr.Choice{
+	m[fb.Pair{120, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 10},
 		{Item: int32(98), Weight: 17},
 		{Item: int32(99), Weight: 54},
@@ -11503,7 +11507,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{120, 112}] = []wr.Choice{
+	m[fb.Pair{120, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 101},
 		{Item: int32(100), Weight: 1},
 		{Item: int32(101), Weight: 295},
@@ -11519,11 +11523,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{120, 113}] = []wr.Choice{
+	m[fb.Pair{120, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 13},
 	}
 
-	m[Pair{120, 114}] = []wr.Choice{
+	m[fb.Pair{120, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 1},
@@ -11533,7 +11537,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{120, 115}] = []wr.Choice{
+	m[fb.Pair{120, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(99), Weight: 12},
 		{Item: int32(101), Weight: 21},
@@ -11548,7 +11552,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 4},
 	}
 
-	m[Pair{120, 116}] = []wr.Choice{
+	m[fb.Pair{120, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 49},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(100), Weight: 1},
@@ -11567,7 +11571,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 40},
 	}
 
-	m[Pair{120, 117}] = []wr.Choice{
+	m[fb.Pair{120, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 86},
 		{Item: int32(98), Weight: 17},
 		{Item: int32(99), Weight: 2},
@@ -11583,12 +11587,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{120, 118}] = []wr.Choice{
+	m[fb.Pair{120, 118}] = []wr.Choice{
 		{Item: int32(105), Weight: 7},
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{120, 119}] = []wr.Choice{
+	m[fb.Pair{120, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(101), Weight: 9},
 		{Item: int32(105), Weight: 5},
@@ -11596,7 +11600,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{120, 120}] = []wr.Choice{
+	m[fb.Pair{120, 120}] = []wr.Choice{
 		{Item: int32(105), Weight: 4},
 		{Item: int32(111), Weight: 1},
 		{Item: int32(118), Weight: 1},
@@ -11604,7 +11608,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{120, 121}] = []wr.Choice{
+	m[fb.Pair{120, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 24},
 		{Item: int32(98), Weight: 23},
 		{Item: int32(99), Weight: 39},
@@ -11630,11 +11634,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 156},
 	}
 
-	m[Pair{120, 122}] = []wr.Choice{
+	m[fb.Pair{120, 122}] = []wr.Choice{
 		{Item: int32(111), Weight: 1},
 	}
 
-	m[Pair{121, 97}] = []wr.Choice{
+	m[fb.Pair{121, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(98), Weight: 113},
 		{Item: int32(99), Weight: 100},
@@ -11664,7 +11668,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 176},
 	}
 
-	m[Pair{121, 98}] = []wr.Choice{
+	m[fb.Pair{121, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 96},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(100), Weight: 26},
@@ -11677,7 +11681,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 3},
 	}
 
-	m[Pair{121, 99}] = []wr.Choice{
+	m[fb.Pair{121, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 125},
 		{Item: int32(101), Weight: 332},
 		{Item: int32(104), Weight: 681},
@@ -11693,7 +11697,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 6},
 	}
 
-	m[Pair{121, 100}] = []wr.Choice{
+	m[fb.Pair{121, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 96},
 		{Item: int32(100), Weight: 6},
 		{Item: int32(101), Weight: 147},
@@ -11708,7 +11712,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 21},
 	}
 
-	m[Pair{121, 101}] = []wr.Choice{
+	m[fb.Pair{121, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 85},
 		{Item: int32(98), Weight: 23},
 		{Item: int32(99), Weight: 16},
@@ -11735,7 +11739,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 131},
 	}
 
-	m[Pair{121, 102}] = []wr.Choice{
+	m[fb.Pair{121, 102}] = []wr.Choice{
 		{Item: int32(97), Weight: 25},
 		{Item: int32(101), Weight: 11},
 		{Item: int32(105), Weight: 49},
@@ -11750,7 +11754,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{121, 103}] = []wr.Choice{
+	m[fb.Pair{121, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 96},
 		{Item: int32(100), Weight: 32},
 		{Item: int32(101), Weight: 131},
@@ -11767,7 +11771,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{121, 104}] = []wr.Choice{
+	m[fb.Pair{121, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 31},
 		{Item: int32(101), Weight: 68},
 		{Item: int32(105), Weight: 8},
@@ -11781,7 +11785,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{121, 105}] = []wr.Choice{
+	m[fb.Pair{121, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 19},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 11},
@@ -11803,11 +11807,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 8},
 	}
 
-	m[Pair{121, 106}] = []wr.Choice{
+	m[fb.Pair{121, 106}] = []wr.Choice{
 		{Item: int32(97), Weight: 10},
 	}
 
-	m[Pair{121, 107}] = []wr.Choice{
+	m[fb.Pair{121, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 35},
 		{Item: int32(104), Weight: 2},
@@ -11822,7 +11826,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{121, 108}] = []wr.Choice{
+	m[fb.Pair{121, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 499},
 		{Item: int32(98), Weight: 14},
 		{Item: int32(99), Weight: 18},
@@ -11848,7 +11852,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 437},
 	}
 
-	m[Pair{121, 109}] = []wr.Choice{
+	m[fb.Pair{121, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 372},
 		{Item: int32(98), Weight: 166},
 		{Item: int32(99), Weight: 1},
@@ -11869,7 +11873,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 56},
 	}
 
-	m[Pair{121, 110}] = []wr.Choice{
+	m[fb.Pair{121, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 458},
 		{Item: int32(98), Weight: 1},
 		{Item: int32(99), Weight: 264},
@@ -11895,7 +11899,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 63},
 	}
 
-	m[Pair{121, 111}] = []wr.Choice{
+	m[fb.Pair{121, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 6},
 		{Item: int32(98), Weight: 20},
 		{Item: int32(99), Weight: 88},
@@ -11925,7 +11929,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 34},
 	}
 
-	m[Pair{121, 112}] = []wr.Choice{
+	m[fb.Pair{121, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 120},
 		{Item: int32(101), Weight: 1202},
 		{Item: int32(104), Weight: 536},
@@ -11943,11 +11947,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 10},
 	}
 
-	m[Pair{121, 113}] = []wr.Choice{
+	m[fb.Pair{121, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 5},
 	}
 
-	m[Pair{121, 114}] = []wr.Choice{
+	m[fb.Pair{121, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 331},
 		{Item: int32(98), Weight: 2},
 		{Item: int32(99), Weight: 5},
@@ -11970,7 +11974,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 28},
 	}
 
-	m[Pair{121, 115}] = []wr.Choice{
+	m[fb.Pair{121, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 144},
 		{Item: int32(98), Weight: 7},
 		{Item: int32(99), Weight: 52},
@@ -11995,7 +11999,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 722},
 	}
 
-	m[Pair{121, 116}] = []wr.Choice{
+	m[fb.Pair{121, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 82},
 		{Item: int32(101), Weight: 411},
 		{Item: int32(104), Weight: 541},
@@ -12012,7 +12016,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{121, 117}] = []wr.Choice{
+	m[fb.Pair{121, 117}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 23},
@@ -12037,7 +12041,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 12},
 	}
 
-	m[Pair{121, 118}] = []wr.Choice{
+	m[fb.Pair{121, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 16},
 		{Item: int32(105), Weight: 8},
@@ -12045,7 +12049,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{121, 119}] = []wr.Choice{
+	m[fb.Pair{121, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 83},
 		{Item: int32(99), Weight: 1},
 		{Item: int32(100), Weight: 1},
@@ -12057,7 +12061,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{121, 120}] = []wr.Choice{
+	m[fb.Pair{121, 120}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 19},
 		{Item: int32(105), Weight: 41},
@@ -12066,7 +12070,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 49},
 	}
 
-	m[Pair{121, 121}] = []wr.Choice{
+	m[fb.Pair{121, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 2},
@@ -12075,7 +12079,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{121, 122}] = []wr.Choice{
+	m[fb.Pair{121, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 48},
 		{Item: int32(101), Weight: 84},
 		{Item: int32(103), Weight: 1},
@@ -12087,7 +12091,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{122, 97}] = []wr.Choice{
+	m[fb.Pair{122, 97}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(98), Weight: 252},
 		{Item: int32(99), Weight: 21},
@@ -12115,7 +12119,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 116},
 	}
 
-	m[Pair{122, 98}] = []wr.Choice{
+	m[fb.Pair{122, 98}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(105), Weight: 1},
@@ -12124,7 +12128,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 3},
 	}
 
-	m[Pair{122, 99}] = []wr.Choice{
+	m[fb.Pair{122, 99}] = []wr.Choice{
 		{Item: int32(97), Weight: 9},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(104), Weight: 3},
@@ -12132,7 +12136,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{122, 100}] = []wr.Choice{
+	m[fb.Pair{122, 100}] = []wr.Choice{
 		{Item: int32(97), Weight: 7},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 6},
@@ -12142,7 +12146,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{122, 101}] = []wr.Choice{
+	m[fb.Pair{122, 101}] = []wr.Choice{
 		{Item: int32(97), Weight: 63},
 		{Item: int32(98), Weight: 44},
 		{Item: int32(99), Weight: 21},
@@ -12169,12 +12173,12 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2777},
 	}
 
-	m[Pair{122, 102}] = []wr.Choice{
+	m[fb.Pair{122, 102}] = []wr.Choice{
 		{Item: int32(101), Weight: 2},
 		{Item: int32(108), Weight: 1},
 	}
 
-	m[Pair{122, 103}] = []wr.Choice{
+	m[fb.Pair{122, 103}] = []wr.Choice{
 		{Item: int32(97), Weight: 1},
 		{Item: int32(104), Weight: 1},
 		{Item: int32(105), Weight: 5},
@@ -12182,7 +12186,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(111), Weight: 1},
 	}
 
-	m[Pair{122, 104}] = []wr.Choice{
+	m[fb.Pair{122, 104}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 2},
@@ -12194,7 +12198,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{122, 105}] = []wr.Choice{
+	m[fb.Pair{122, 105}] = []wr.Choice{
 		{Item: int32(97), Weight: 61},
 		{Item: int32(98), Weight: 16},
 		{Item: int32(99), Weight: 23},
@@ -12222,11 +12226,11 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 34},
 	}
 
-	m[Pair{122, 106}] = []wr.Choice{
+	m[fb.Pair{122, 106}] = []wr.Choice{
 		{Item: int32(105), Weight: 2},
 	}
 
-	m[Pair{122, 107}] = []wr.Choice{
+	m[fb.Pair{122, 107}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(105), Weight: 1},
@@ -12236,7 +12240,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{122, 108}] = []wr.Choice{
+	m[fb.Pair{122, 108}] = []wr.Choice{
 		{Item: int32(97), Weight: 4},
 		{Item: int32(101), Weight: 190},
 		{Item: int32(105), Weight: 50},
@@ -12246,7 +12250,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{122, 109}] = []wr.Choice{
+	m[fb.Pair{122, 109}] = []wr.Choice{
 		{Item: int32(97), Weight: 8},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 1},
@@ -12255,7 +12259,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{122, 110}] = []wr.Choice{
+	m[fb.Pair{122, 110}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(101), Weight: 2},
 		{Item: int32(105), Weight: 2},
@@ -12264,7 +12268,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 3},
 	}
 
-	m[Pair{122, 111}] = []wr.Choice{
+	m[fb.Pair{122, 111}] = []wr.Choice{
 		{Item: int32(97), Weight: 158},
 		{Item: int32(98), Weight: 19},
 		{Item: int32(99), Weight: 43},
@@ -12293,25 +12297,25 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 70},
 	}
 
-	m[Pair{122, 112}] = []wr.Choice{
+	m[fb.Pair{122, 112}] = []wr.Choice{
 		{Item: int32(97), Weight: 13},
 		{Item: int32(105), Weight: 1},
 		{Item: int32(111), Weight: 1},
 		{Item: int32(121), Weight: 1},
 	}
 
-	m[Pair{122, 113}] = []wr.Choice{
+	m[fb.Pair{122, 113}] = []wr.Choice{
 		{Item: int32(117), Weight: 4},
 	}
 
-	m[Pair{122, 114}] = []wr.Choice{
+	m[fb.Pair{122, 114}] = []wr.Choice{
 		{Item: int32(97), Weight: 5},
 		{Item: int32(101), Weight: 1},
 		{Item: int32(111), Weight: 4},
 		{Item: int32(117), Weight: 1},
 	}
 
-	m[Pair{122, 115}] = []wr.Choice{
+	m[fb.Pair{122, 115}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(99), Weight: 7},
 		{Item: int32(107), Weight: 2},
@@ -12319,7 +12323,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 2},
 	}
 
-	m[Pair{122, 116}] = []wr.Choice{
+	m[fb.Pair{122, 116}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(101), Weight: 4},
 		{Item: int32(104), Weight: 2},
@@ -12330,7 +12334,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 1},
 	}
 
-	m[Pair{122, 117}] = []wr.Choice{
+	m[fb.Pair{122, 117}] = []wr.Choice{
 		{Item: int32(98), Weight: 4},
 		{Item: int32(99), Weight: 10},
 		{Item: int32(100), Weight: 1},
@@ -12353,18 +12357,18 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 5},
 	}
 
-	m[Pair{122, 118}] = []wr.Choice{
+	m[fb.Pair{122, 118}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(111), Weight: 6},
 	}
 
-	m[Pair{122, 119}] = []wr.Choice{
+	m[fb.Pair{122, 119}] = []wr.Choice{
 		{Item: int32(97), Weight: 3},
 		{Item: int32(105), Weight: 13},
 		{Item: int32(111), Weight: 2},
 	}
 
-	m[Pair{122, 121}] = []wr.Choice{
+	m[fb.Pair{122, 121}] = []wr.Choice{
 		{Item: int32(97), Weight: 2},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(99), Weight: 1},
@@ -12384,7 +12388,7 @@ func MakeChoices() map[Pair][]wr.Choice {
 		{Item: int32(124), Weight: 90},
 	}
 
-	m[Pair{122, 122}] = []wr.Choice{
+	m[fb.Pair{122, 122}] = []wr.Choice{
 		{Item: int32(97), Weight: 77},
 		{Item: int32(98), Weight: 6},
 		{Item: int32(101), Weight: 84},

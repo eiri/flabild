@@ -4,11 +4,12 @@ import (
 	"flag"
 	"log"
 	"os"
+	"plugin"
 	"strings"
 
 	wr "github.com/mroth/weightedrand"
 
-	"github.com/eiri/flabild/pkg/flabild"
+	fb "github.com/eiri/flabild/pkg/flabild"
 )
 
 func init() {
@@ -19,14 +20,29 @@ func init() {
 func main() {
 	var n int
 	flag.IntVar(&n, "number", 1, "number of words to generate")
-	flag.IntVar(&n, "n", 1, "umber of words to generate")
+	flag.IntVar(&n, "n", 1, "number of words to generate")
 	flag.Parse()
 
-	choices := flabild.MakeChoices()
+	p, err := plugin.Open("en.so")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	f, err := p.Lookup("MakeChoices")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	makeChoices, ok := f.(func() map[fb.Pair][]wr.Choice)
+	if !ok {
+		log.Fatalf("Unexpected type for MakeChoices function")
+	}
+
+	choices := makeChoices()
 
 	for {
 		var wb strings.Builder
-		pair := flabild.Pair{'_', '_'}
+		pair := fb.Pair{'_', '_'}
 		for {
 			chooser, err := wr.NewChooser(choices[pair]...)
 			if err != nil {

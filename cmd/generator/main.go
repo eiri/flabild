@@ -11,14 +11,18 @@ import (
 
 const (
 	MOD_SRC = `// THIS MODULE WAS GENERATED, DO NOT EDIT MANUALLY
-package flabild
+package main
 
-import wr "github.com/mroth/weightedrand"
+import (
+	wr "github.com/mroth/weightedrand"
 
-func MakeChoices() map[Pair][]wr.Choice {
-	m := make(map[Pair][]wr.Choice)
+	fb "github.com/eiri/flabild/pkg/flabild"
+)
+
+func MakeChoices() map[fb.Pair][]wr.Choice {
+	m := make(map[fb.Pair][]wr.Choice)
 {{ range $p, $m := . }}
-	m[Pair{ {{index $p 0}}, {{index $p 1}} }] = []wr.Choice{
+	m[fb.Pair{ {{index $p 0}}, {{index $p 1}} }] = []wr.Choice{
 	{{- range $l, $w := $m }}
 		{Item: int32({{ $l }}), Weight: {{ $w }}},
 	{{- end }}
