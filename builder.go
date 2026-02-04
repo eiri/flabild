@@ -8,6 +8,9 @@ import (
 	"github.com/mroth/weightedrand/v2"
 )
 
+//go:generate go tool generator english.txt plugins/en/en.go
+//go:generate go fmt plugins/en/en.go
+
 const PLUGIN_API_FUNC = "BuildChoicesMap"
 
 type Pair [2]rune
