@@ -3,18 +3,14 @@
 
 SRCS := $(shell find $(CURDIR) -name '*.go')
 
-words_alpha.txt:
+english.txt:
 	curl -L https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt -o $@
 
-generator:
-	go build -o $@ ./cmd/generator/...
-
-plugin/en/en.go: generator
+plugin/en/en.go: english.txt
 	rm -f $@
-	./$< words_alpha.txt > $@
-	go fmt $@
+	go generate ./...
 
-en.so: plugin/en/en.go words_alpha.txt
+en.so: plugin/en/en.go
 	go build -buildmode=plugin -o en.so $<
 
 flabild: $(SRCS) en.so
@@ -29,4 +25,5 @@ clean:
 	rm -f generator
 	rm -f flabild
 	rm -f *.so
+	rm -rf plugin/*/*
 	go clean

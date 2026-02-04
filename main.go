@@ -13,6 +13,9 @@ import (
 	"github.com/eiri/flabild/pkg/flabild"
 )
 
+//go:generate go tool generator english.txt plugin/en/en.go
+//go:generate go fmt plugin/en/en.go
+
 func init() {
 	log.SetFlags(0)
 	log.SetOutput(os.Stdout)
