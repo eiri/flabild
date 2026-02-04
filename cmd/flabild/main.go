@@ -42,7 +42,10 @@ func main() {
 			log.Fatal(err)
 		}
 
-		fmt.Fprintln(os.Stdout, word)
+		_, err = fmt.Fprintln(os.Stdout, word)
+		if err != nil {
+			log.Fatal(err)
+		}
 
 		if n--; n <= 0 {
 			break

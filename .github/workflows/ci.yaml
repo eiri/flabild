@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ["1.25"]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+      - name: Setup go ${{ matrix.go }}
+        uses: actions/setup-go@v6
+        with:
+          go-version: ${{ matrix.go }}
+          check-latest: true
+          cache: true
+      - name: Run tests
+        run: go test -v ./...
+      - name: Run linters
+        uses: golangci/golangci-lint-action@v9
+        with:
+          version: v2.7
