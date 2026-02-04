@@ -1,5 +1,5 @@
 module github.com/eiri/flabild
 
-go 1.18
+go 1.25
 
-require github.com/mroth/weightedrand v1.0.0
+require github.com/mroth/weightedrand/v2 v2.1.0

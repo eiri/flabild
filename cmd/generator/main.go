@@ -14,17 +14,17 @@ const (
 package main
 
 import (
-	wr "github.com/mroth/weightedrand"
+	"github.com/mroth/weightedrand/v2"
 
-	fb "github.com/eiri/flabild/pkg/flabild"
+	"github.com/eiri/flabild/pkg/flabild"
 )
 
-func MakeChoices() map[fb.Pair][]wr.Choice {
-	m := make(map[fb.Pair][]wr.Choice)
+func MakeChoices() map[flabild.Pair][]weightedrand.Choice[rune, int] {
+	m := make(map[flabild.Pair][]weightedrand.Choice[rune, int])
 {{ range $p, $m := . }}
-	m[fb.Pair{ {{index $p 0}}, {{index $p 1}} }] = []wr.Choice{
+	m[flabild.Pair{ {{index $p 0}}, {{index $p 1}} }] = []weightedrand.Choice[rune, int]{
 	{{- range $l, $w := $m }}
-		{Item: int32({{ $l }}), Weight: {{ $w }}},
+		{Item: rune({{ $l }}), Weight: {{ $w }}},
 	{{- end }}
 	}
 {{ end }}
