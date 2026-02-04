@@ -6,6 +6,7 @@ import (
 	"bufio"
 	"log"
 	"os"
+	"strings"
 	"text/template"
 
 	"github.com/eiri/flabild/pkg/flabild"
@@ -21,8 +22,8 @@ import (
 	"github.com/eiri/flabild/pkg/flabild"
 )
 
-func MakeChoices() map[flabild.Pair][]weightedrand.Choice[rune, int] {
-	m := make(map[flabild.Pair][]weightedrand.Choice[rune, int])
+func BuildChoicesMap() flabild.PairMap {
+	m := make(flabild.PairMap)
 {{ range $p, $m := . }}
 	m[flabild.Pair{ {{index $p 0}}, {{index $p 1}} }] = []weightedrand.Choice[rune, int]{
 	{{- range $l, $w := $m }}
@@ -34,6 +35,16 @@ func MakeChoices() map[flabild.Pair][]weightedrand.Choice[rune, int] {
 }
 `
 )
+
+type Triplet [3]rune
+
+func (t Triplet) String() string {
+	var b strings.Builder
+	for _, r := range t {
+		b.WriteByte(byte(r))
+	}
+	return b.String()
+}
 
 func init() {
 	log.SetOutput(os.Stdout)
@@ -84,10 +95,10 @@ func generateMap(dictFile string) (map[flabild.Pair]map[rune]int, error) {
 	defer file.Close()
 
 	// Map
-	mapSink := make([]flabild.Triplet, 0)
+	mapSink := make([]Triplet, 0)
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		triplet := flabild.Triplet{'_', '_', '_'}
+		triplet := Triplet{'_', '_', '_'}
 		word := scanner.Text() + "|"
 		for _, letter := range word {
 			triplet[0], triplet[1] = triplet[1], triplet[2]
