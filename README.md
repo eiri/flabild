@@ -1,4 +1,6 @@
 # flabild
+[![CI Status](https://github.com/eiri/flabild/actions/workflows/ci.yaml/badge.svg)](https://github.com/eiri/flabild/actions/workflows/ci.yaml)
+
 Generator of fake pronounceable words
 
 ## Summary
