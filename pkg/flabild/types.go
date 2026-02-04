@@ -1,9 +1,7 @@
 package flabild
 
 import (
-	"math/rand"
 	"strings"
-	"time"
 )
 
 type Pair [2]rune
@@ -16,8 +14,4 @@ func (t Triplet) String() string {
 		b.WriteByte(byte(r))
 	}
 	return b.String()
-}
-
-func init() {
-	rand.Seed(time.Now().UnixNano())
 }
