@@ -19,7 +19,7 @@ import (
 
 func init() {
 	log.SetFlags(0)
-	log.SetOutput(os.Stdout)
+	log.SetOutput(os.Stderr)
 }
 
 func main() {
@@ -44,7 +44,7 @@ func main() {
 
 	makeChoices, ok := f.(func() map[flabild.Pair][]weightedrand.Choice[rune, int])
 	if !ok {
-		log.Fatalf("Unexpected type for MakeChoices function")
+		log.Fatal("Unexpected type for MakeChoices function")
 	}
 
 	choices := makeChoices()
@@ -64,7 +64,7 @@ func main() {
 			wb.WriteByte(byte(l))
 			pair[0], pair[1] = pair[1], l
 		}
-		log.Println(wb.String())
+		fmt.Fprintln(os.Stdout, wb.String())
 
 		if n--; n <= 0 {
 			break
