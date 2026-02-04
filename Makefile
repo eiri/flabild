@@ -16,6 +16,10 @@ libflabild-en.so: plugin/en/en.go
 flabild: $(SRCS) libflabild-en.so
 	go build -o $@ main.go
 
+.PHONY: test
+test:
+	go test -v ./...
+
 .PHONY: run
 run: flabild
 	./$<
