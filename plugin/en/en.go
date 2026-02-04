@@ -7,8 +7,8 @@ import (
 	"github.com/eiri/flabild/pkg/flabild"
 )
 
-func MakeChoices() map[flabild.Pair][]weightedrand.Choice[rune, int] {
-	m := make(map[flabild.Pair][]weightedrand.Choice[rune, int])
+func BuildChoicesMap() flabild.PairMap {
+	m := make(flabild.PairMap)
 
 	m[flabild.Pair{95, 95}] = []weightedrand.Choice[rune, int]{
 		{Item: rune(97), Weight: 25417},

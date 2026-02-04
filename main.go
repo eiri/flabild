@@ -7,9 +7,6 @@ import (
 	"os"
 	"path/filepath"
 	"plugin"
-	"strings"
-
-	"github.com/mroth/weightedrand/v2"
 
 	"github.com/eiri/flabild/pkg/flabild"
 )
@@ -37,34 +34,18 @@ func main() {
 		log.Fatal(err)
 	}
 
-	f, err := p.Lookup("MakeChoices")
+	chooser, err := flabild.NewChooser(p)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	makeChoices, ok := f.(func() map[flabild.Pair][]weightedrand.Choice[rune, int])
-	if !ok {
-		log.Fatal("Unexpected type for MakeChoices function")
-	}
-
-	choices := makeChoices()
-
 	for {
-		var wb strings.Builder
-		pair := flabild.Pair{'_', '_'}
-		for {
-			chooser, err := weightedrand.NewChooser(choices[pair]...)
-			if err != nil {
-				log.Fatalf("Error: Can't create new chooser: %s", err)
-			}
-			l := chooser.Pick()
-			if l == '|' {
-				break
-			}
-			wb.WriteByte(byte(l))
-			pair[0], pair[1] = pair[1], l
+		word, err := chooser.Word()
+		if err != nil {
+			log.Fatal(err)
 		}
-		fmt.Fprintln(os.Stdout, wb.String())
+
+		fmt.Fprintln(os.Stdout, word)
 
 		if n--; n <= 0 {
 			break
