@@ -10,10 +10,10 @@ plugin/en/en.go: english.txt
 	rm -f $@
 	go generate ./...
 
-en.so: plugin/en/en.go
-	go build -buildmode=plugin -o en.so $<
+libflabild-en.so: plugin/en/en.go
+	go build -buildmode=plugin -o $@ $<
 
-flabild: $(SRCS) en.so
+flabild: $(SRCS) libflabild-en.so
 	go build -o $@ main.go
 
 .PHONY: run
