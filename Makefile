@@ -6,15 +6,15 @@ SRCS := $(shell find $(CURDIR) -name '*.go')
 english.txt:
 	curl -L https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt -o $@
 
-plugin/en/en.go: english.txt
+plugins/en/en.go: english.txt
 	rm -f $@
 	go generate ./...
 
-libflabild-en.so: plugin/en/en.go
+libflabild-en.so: plugins/en/en.go
 	go build -buildmode=plugin -o $@ $<
 
 flabild: $(SRCS) libflabild-en.so
-	go build -o $@ main.go
+	go build -o $@ ./cmd/$@/...
 
 .PHONY: test
 test:
@@ -26,8 +26,7 @@ run: flabild
 
 .PHONY: clean
 clean:
-	rm -f generator
 	rm -f flabild
 	rm -f *.so
-	rm -rf plugin/*/*
+	rm -rf plugins/*/*
 	go clean

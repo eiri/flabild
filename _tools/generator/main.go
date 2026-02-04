@@ -9,7 +9,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/eiri/flabild/pkg/flabild"
+	"github.com/eiri/flabild"
 )
 
 const (
@@ -19,7 +19,7 @@ package main
 import (
 	"github.com/mroth/weightedrand/v2"
 
-	"github.com/eiri/flabild/pkg/flabild"
+	"github.com/eiri/flabild"
 )
 
 func BuildChoicesMap() flabild.PairMap {

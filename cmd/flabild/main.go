@@ -8,11 +8,8 @@ import (
 	"path/filepath"
 	"plugin"
 
-	"github.com/eiri/flabild/pkg/flabild"
+	"github.com/eiri/flabild"
 )
-
-//go:generate go tool generator english.txt plugin/en/en.go
-//go:generate go fmt plugin/en/en.go
 
 func init() {
 	log.SetFlags(0)
