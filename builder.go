@@ -11,6 +11,9 @@ import (
 //go:generate go tool generator english.txt plugins/en/en.go
 //go:generate go fmt plugins/en/en.go
 
+//go:generate go tool generator russian.txt plugins/ru/ru.go
+//go:generate go fmt plugins/ru/ru.go
+
 const PLUGIN_API_FUNC = "BuildChoicesMap"
 
 type Pair [2]rune
@@ -51,12 +54,12 @@ func (c *Chooser) Word() (string, error) {
 		if err != nil {
 			return "", fmt.Errorf("can't create new chooser: %w", err)
 		}
-		l := chooser.Pick()
-		if l == '|' {
+		r := chooser.Pick()
+		if r == '|' {
 			break
 		}
-		wb.WriteByte(byte(l))
-		pair[0], pair[1] = pair[1], l
+		wb.WriteRune(r)
+		pair[0], pair[1] = pair[1], r
 	}
 
 	return wb.String(), nil
